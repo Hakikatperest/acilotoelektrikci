@@ -232,6 +232,7 @@
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
+            margin-top: 40px;
         }
         
         /* Mavi Butonlar */
@@ -240,7 +241,7 @@
             align-items: center;
             background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
             color: white;
-            padding: 16px 40px;
+            padding: 16px 35px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
@@ -249,6 +250,9 @@
             box-shadow: 0 5px 20px rgba(37, 99, 235, 0.4);
             border: none;
             cursor: pointer;
+            text-align: center;
+            justify-content: center;
+            min-height: 60px;
         }
         
         .cta-button:hover {
@@ -270,6 +274,18 @@
         .cta-button i {
             margin-right: 10px;
             font-size: 20px;
+        }
+        
+        /* Diğer butonlar için stil */
+        .brand-card .cta-button,
+        .service-card .cta-button {
+            padding: 12px 25px;
+            font-size: 16px;
+            width: auto;
+            min-height: 50px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
         
         /* Akü Markaları Bölümü */
@@ -338,14 +354,20 @@
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
         }
         
+        /* Resim Boyutları Büyütüldü */
         .brand-logo {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             object-fit: contain;
             margin-bottom: 25px;
             border-radius: 10px;
             padding: 15px;
             background: #eff6ff;
+            transition: transform 0.3s ease;
+        }
+        
+        .brand-card:hover .brand-logo {
+            transform: scale(1.05);
         }
         
         .brand-card h3 {
@@ -577,16 +599,22 @@
         }
         
         .article-image {
-            flex: 0 0 300px;
+            flex: 0 0 400px;
             text-align: center;
         }
         
+        /* Makale resimleri büyütüldü */
         .article-img {
             width: 100%;
-            max-width: 300px;
+            max-width: 400px;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+        
+        .article-image:hover .article-img {
+            transform: scale(1.03);
         }
         
         .article-img-caption {
@@ -897,6 +925,11 @@
             
             .article-image {
                 order: -1;
+                flex: 0 0 100%;
+            }
+            
+            .article-img {
+                max-width: 100%;
             }
         }
         
@@ -952,8 +985,14 @@
             }
             
             .brand-logo {
-                width: 120px;
-                height: 120px;
+                width: 180px;
+                height: 180px;
+            }
+            
+            .hero .cta-button {
+                padding: 14px 25px;
+                font-size: 16px;
+                min-height: 55px;
             }
         }
         
@@ -973,12 +1012,13 @@
             .hero-buttons {
                 flex-direction: column;
                 align-items: center;
+                width: 100%;
             }
             
-            .cta-button {
+            .hero .cta-button {
                 width: 100%;
-                max-width: 300px;
-                justify-content: center;
+                max-width: 100%;
+                margin-bottom: 10px;
             }
             
             .phone-big {
@@ -992,6 +1032,11 @@
             
             .brands-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .brand-logo {
+                width: 160px;
+                height: 160px;
             }
         }
     </style>
@@ -1064,7 +1109,7 @@
                     <img src="https://www.acilotoelektrikci.com/images/varta.webp" alt="Varta Akü - En Kaliteli Akü Markası" class="brand-logo">
                     <h3>Varta Akü</h3>
                     <p>Dünyanın lider akü markası Varta'nın resmi satıcısıyız. Varta aküleri yüksek performans, uzun ömür ve güvenilirlik sunar. Tüm araç modelleri için uygun Varta akü çeşitleri stoklarımızda mevcuttur.</p>
-                    <a href="tel:05054212707" class="cta-button" style="padding: 12px 25px; font-size: 16px;">
+                    <a href="tel:05054212707" class="cta-button">
                         <i class="fas fa-phone-alt"></i> Varta Akü İçin Ara
                     </a>
                 </div>
@@ -1073,7 +1118,7 @@
                     <img src="https://www.acilotoelektrikci.com/images/mutlu.webp" alt="Mutlu Akü - Türkiye'nin Yerli Akü Markası" class="brand-logo">
                     <h3>Mutlu Akü</h3>
                     <p>Türkiye'nin lider akü markası Mutlu, yerli üretim kalitesiyle öne çıkar. Mutlu aküler dayanıklılık ve uygun fiyat avantajını bir arada sunar. Tüm otomobil ve ticari araçlarınız için Mutlu akü temin ediyoruz.</p>
-                    <a href="tel:05054212707" class="cta-button" style="padding: 12px 25px; font-size: 16px;">
+                    <a href="tel:05054212707" class="cta-button">
                         <i class="fas fa-phone-alt"></i> Mutlu Akü İçin Ara
                     </a>
                 </div>
@@ -1082,7 +1127,7 @@
                     <img src="https://www.acilotoelektrikci.com/images/inci.webp" alt="İnci Akü - Güvenilir ve Ekonomik Akü" class="brand-logo">
                     <h3>İnci Akü</h3>
                     <p>İnci akü, kaliteli ve ekonomik çözüm arayanlar için ideal seçenektir. Uzun ömürlü performansı ve uygun fiyat politikasıyla İnci aküler tüm araç sahiplerinin tercihidir. Motosiklet, otomobil ve ticari araçlar için.</p>
-                    <a href="tel:05054212707" class="cta-button" style="padding: 12px 25px; font-size: 16px;">
+                    <a href="tel:05054212707" class="cta-button">
                         <i class="fas fa-phone-alt"></i> İnci Akü İçin Ara
                     </a>
                 </div>
@@ -1100,7 +1145,7 @@
                 </div>
                 <h3>Akü Değişimi & Şarjı</h3>
                 <p>Varta, Mutlu, İnci akü değişimi ve şarjı. Bitmiş akünüzü yerinde şarj ediyor veya yeni akü takıyoruz. Tüm araç modelleri için uygun akü stoklarımız mevcuttur.</p>
-                <a href="tel:05054212707" class="cta-button" style="padding: 12px 25px; font-size: 16px;">
+                <a href="tel:05054212707" class="cta-button">
                     <i class="fas fa-phone-alt"></i> Akü İçin Ara
                 </a>
             </div>
@@ -1111,7 +1156,7 @@
                 </div>
                 <h3>Marş Sistemi Tamiri</h3>
                 <p>Marş motoru arızaları, marş problemi, marş dinamosu tamiri. Aracınız çalışmıyorsa, marş problemi yaşıyorsanız hemen bizi arayın. Uzman ekibimiz sorununuzu çözsün.</p>
-                <a href="tel:05054212707" class="cta-button" style="padding: 12px 25px; font-size: 16px;">
+                <a href="tel:05054212707" class="cta-button">
                     <i class="fas fa-phone-alt"></i> Marş Tamiri İçin Ara
                 </a>
             </div>
@@ -1122,7 +1167,7 @@
                 </div>
                 <h3>Oto Elektrik Tamiri</h3>
                 <p>Elektrik sistemi arızaları, sigorta problemleri, kablo tamiri, aydınlatma arızaları. Oto elektrik konusunda tüm arızalarınız için uzman çözümler sunuyoruz.</p>
-                <a href="tel:05054212707" class="cta-button" style="padding: 12px 25px; font-size: 16px;">
+                <a href="tel:05054212707" class="cta-button">
                     <i class="fas fa-phone-alt"></i> Elektrik Tamiri İçin Ara
                 </a>
             </div>
@@ -1133,7 +1178,7 @@
                 </div>
                 <h3>Acil Yol Yardım</h3>
                 <p>Yolda kaldıysanız, aracınız çalışmıyorsa hemen bizi arayın. 7/24 acil yol yardım hizmetimizle en kısa sürede yanınızdayız. Tüm İstanbul ve çevre illerde hizmet veriyoruz.</p>
-                <a href="tel:05054212707" class="cta-button" style="padding: 12px 25px; font-size: 16px;">
+                <a href="tel:05054212707" class="cta-button">
                     <i class="fas fa-phone-alt"></i> Acil Yardım İçin Ara
                 </a>
             </div>
@@ -1267,12 +1312,6 @@
                         <li><strong>Yaş Faktörü:</strong> Akünüz 3-5 yaşını doldurmuşsa</li>
                     </ul>
                     <p>En yakın oto elektrikçi olarak, akü testi ve değişimi konusunda profesyonel hizmet sunuyoruz. Akünüzün durumunu ücretsiz test edip, değişim gerekiyorsa en uygun aküyü öneriyoruz.</p>
-                </div>
-                <div class="article-image">
-                    <div style="background: #f0f9ff; padding: 20px; border-radius: 10px; text-align: center;">
-                        <i class="fas fa-car-battery" style="font-size: 80px; color: #3b82f6; margin-bottom: 15px;"></i>
-                        <p style="color: #1e3a8a; font-weight: 600;">Akünüzü Ücretsiz Test Ettirin!</p>
-                    </div>
                 </div>
             </div>
         </div>
