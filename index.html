@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17896475889"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17896475889');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acil Oto Elektrikçi | En Yakın Oto Elektrik Tamir Servisi | 7/24 Yol Yardım</title>
+    <meta name="description" content="En yakın oto elektrikçi arıyorsanız doğru adrestesiniz! 7/24 acil yol yardım, Varta, Mutlu, İnci akü değişimi, marş tamiri, oto elektrik arızaları. Hemen ara: 0505 421 27 07">
+    <meta name="keywords" content="en yakın oto elektrikçi, acil oto elektrikçi, varta akü, mutlu akü, inci akü, akü değişimi, marş tamiri, yol yardım, acil yol yardım">
+    <meta name="author" content="Acil Oto Elektrikçi">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Temel Stiller */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: #f8fafc;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Header ve Logo */
+        header {
+            background-color: #1e3a8a;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .logo-icon {
+            font-size: 32px;
+            margin-right: 12px;
+            color: #3b82f6;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        
+        .logo-text span {
+            color: #60a5fa;
+        }
+        
+        /* Telefon Başlıkta */
+        .header-phone {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+        
+        .header-phone:hover {
+            background: linear-gradient(135deg, #1d4ed8 0%, #3b82f6 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+        }
+        
+        .header-phone i {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+        
+        /* Mobil Menü */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+            padding: 20px;
+            flex-direction: column;
+        }
+        
+        .mobile-menu.active {
+            display: flex;
+        }
+        
+        .mobile-menu a {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        /* Ana Menü */
+        .main-menu {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .main-menu a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s;
+            position: relative;
+            padding: 5px 0;
+        }
+        
+        .main-menu a:hover {
+            color: #60a5fa;
+        }
+        
+        .main-menu a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #60a5fa;
+            transition: width 0.3s;
+        }
+        
+        .main-menu a:hover:after {
+            width: 100%;
+        }
+        
+        /* Hero Bölümü */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 160px 20px 100px;
+            text-align: center;
+            margin-top: 70px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="%23ffffff" opacity="0.05"/></svg>');
+            background-size: cover;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 25px;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        
+        .hero h1 span {
+            color: #93c5fd;
+            display: block;
+            font-size: 2.8rem;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        /* Mavi Butonlar */
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(37, 99, 235, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.6);
+        }
+        
+        .whatsapp-button {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+        }
+        
+        .whatsapp-button:hover {
+            background: linear-gradient(135deg, #128C7E 0%, #25D366 100%);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+        }
+        
+        .cta-button i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        
+        /* Akü Markaları Bölümü */
+        .brands-section {
+            padding: 100px 20px;
+            background-color: #f0f9ff;
+        }
+        
+        .brands-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 60px;
+            font-size: 2.5rem;
+            font-weight: 800;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #3b82f6, #60a5fa);
+            border-radius: 2px;
+        }
+        
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .brand-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .brand-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #3b82f6, #60a5fa);
+        }
+        
+        .brand-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .brand-logo {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            padding: 15px;
+            background: #eff6ff;
+        }
+        
+        .brand-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        
+        .brand-card p {
+            color: #6b7280;
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        
+        /* Hizmetler Bölümü */
+        .services {
+            padding: 100px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .service-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #3b82f6, #60a5fa);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-icon {
+            font-size: 48px;
+            color: #3b82f6;
+            margin-bottom: 25px;
+            background: #eff6ff;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .service-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .service-card p {
+            color: #6b7280;
+            margin-bottom: 25px;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        
+        /* Neden Biz Bölümü */
+        .why-us {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            padding: 100px 20px;
+            margin: 60px 0;
+        }
+        
+        .why-us-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 40px;
+            color: #3b82f6;
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .feature-card p {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+        
+        /* Telefon Bölümü */
+        .phone-section {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            margin: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .phone-section:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z" fill="%23ffffff" opacity="0.1"/></svg>');
+            background-size: cover;
+        }
+        
+        .phone-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            font-weight: 800;
+        }
+        
+        .phone-section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.95;
+            position: relative;
+        }
+        
+        .phone-big {
+            display: inline-flex;
+            align-items: center;
+            background: white;
+            color: #1e3a8a;
+            padding: 20px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        
+        .phone-big:hover {
+            background: #f8fafc;
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .phone-big i {
+            margin-right: 15px;
+            color: #3b82f6;
+        }
+        
+        /* SEO Makaleler Bölümü */
+        .seo-articles {
+            padding: 100px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .article-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            margin-bottom: 40px;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .article-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        
+        .article-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: flex-start;
+        }
+        
+        .article-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .article-image {
+            flex: 0 0 300px;
+            text-align: center;
+        }
+        
+        .article-img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+        
+        .article-img-caption {
+            color: #6b7280;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        
+        .article-card p {
+            color: #4b5563;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        
+        .article-card ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .article-card li {
+            color: #4b5563;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        /* İletişim */
+        .contact {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 100px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="%23ffffff" opacity="0.1"/></svg>');
+            background-size: cover;
+            transform: rotate(180deg);
+        }
+        
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            position: relative;
+        }
+        
+        .contact-info h3, .contact-form h3 {
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        
+        .contact-details {
+            margin-top: 30px;
+        }
+        
+        .contact-details p {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .contact-details i {
+            margin-right: 15px;
+            font-size: 20px;
+            color: #93c5fd;
+            margin-top: 3px;
+        }
+        
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 18px 20px;
+            border-radius: 10px;
+            border: none;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.9);
+            transition: all 0.3s;
+        }
+        
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(147, 197, 253, 0.5);
+        }
+        
+        .form-group textarea {
+            height: 160px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(37, 99, 235, 0.4);
+        }
+        
+        .submit-btn:hover {
+            background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.6);
+        }
+        
+        /* Mobil Butonlar - Sağ Alt Köşe */
+        .mobile-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .whatsapp-btn, .call-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 28px;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-btn {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+        }
+        
+        .call-btn {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+        }
+        
+        .whatsapp-btn:hover, .call-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Sohbet Balonu */
+        .chat-bubble {
+            position: fixed;
+            bottom: 130px;
+            right: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            padding: 25px;
+            width: 300px;
+            z-index: 999;
+            display: none;
+            animation: fadeInUp 0.5s ease-out;
+            border: 1px solid #e5e7eb;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .chat-bubble p {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .chat-bubble .cta-button {
+            padding: 12px 25px;
+            font-size: 16px;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+        
+        .close-chat {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: #9ca3af;
+            font-size: 22px;
+            cursor: pointer;
+            line-height: 1;
+        }
+        
+        /* Footer */
+        footer {
+            background: #0f172a;
+            color: #cbd5e1;
+            padding: 60px 20px 40px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-logo span {
+            color: #60a5fa;
+        }
+        
+        .footer-logo i {
+            margin-right: 10px;
+            color: #3b82f6;
+        }
+        
+        .footer-links h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #60a5fa;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid #334155;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+        
+        /* Responsive Tasarım */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero h1 span {
+                font-size: 2.2rem;
+            }
+            
+            .main-menu {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .article-content {
+                flex-direction: column;
+            }
+            
+            .article-image {
+                order: -1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 140px 20px 80px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero h1 span {
+                font-size: 1.8rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .phone-big {
+                font-size: 1.5rem;
+                padding: 18px 35px;
+            }
+            
+            .mobile-buttons {
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .whatsapp-btn, .call-btn {
+                width: 55px;
+                height: 55px;
+                font-size: 24px;
+            }
+            
+            .chat-bubble {
+                width: 280px;
+                right: 20px;
+                bottom: 120px;
+            }
+            
+            .services, .why-us, .seo-articles, .contact, .brands-section {
+                padding: 80px 20px;
+            }
+            
+            .article-card, .brand-card, .service-card {
+                padding: 30px;
+            }
+            
+            .brand-logo {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .logo-text {
+                font-size: 20px;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero h1 span {
+                font-size: 1.6rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-button {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .phone-big {
+                font-size: 1.3rem;
+                padding: 16px 30px;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .brands-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header ve Menü -->
+    <header>
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-car-battery"></i>
+                </div>
+                <div class="logo-text">
+                    Acil <span>Oto Elektrikçi</span>
+                </div>
+            </a>
+            
+            <nav class="main-menu">
+                <a href="#home">Ana Sayfa</a>
+                <a href="#brands">Akü Markaları</a>
+                <a href="#services">Hizmetlerimiz</a>
+                <a href="#why-us">Neden Biz?</a>
+                <a href="#articles">Bilgi Bankası</a>
+                <a href="#contact">İletişim</a>
+                <a href="tel:05054212707" class="header-phone">
+                    <i class="fas fa-phone-alt"></i> 0505 421 27 07
+                </a>
+            </nav>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#home">Ana Sayfa</a>
+                <a href="#brands">Akü Markaları</a>
+                <a href="#services">Hizmetlerimiz</a>
+                <a href="#why-us">Neden Biz?</a>
+                <a href="#articles">Bilgi Bankası</a>
+                <a href="#contact">İletişim</a>
+                <a href="tel:05054212707" style="color: #3b82f6; font-weight: 700;">
+                    <i class="fas fa-phone-alt"></i> 0505 421 27 07
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Bölümü -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1><span>En Yakın Oto Elektrikçi</span>Acil Oto Elektrik Tamir Servisi</h1>
+            <p>Yolda mı kaldınız? Aracınız çalışmıyor mu? En yakın oto elektrikçi olarak 7/24 acil yol yardım hizmeti sunuyoruz. Profesyonel ekibimizle en kısa sürede yanınızdayız.</p>
+            <div class="hero-buttons">
+                <a href="tel:05054212707" class="cta-button">
+                    <i class="fas fa-phone-alt"></i> Hemen Ara: 0505 421 27 07
+                </a>
+                <a href="https://wa.me/905054212707?text=Merhaba,%20en%20yakın%20oto%20elektrikçi%20aranıyorum.%20Yardıma%20ihtiyacım%20var." target="_blank" class="cta-button whatsapp-button">
+                    <i class="fab fa-whatsapp"></i> WhatsApp'tan Yaz
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Akü Markaları Bölümü -->
+    <section class="brands-section" id="brands">
+        <div class="brands-container">
+            <h2 class="section-title">Resmi Satıcısı Olduğumuz Akü Markaları</h2>
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <img src="varta.webp" alt="Varta Akü - En Kaliteli Akü Markası" class="brand-logo">
+                    <h3>Varta Akü</h3>
+                    <p>Dünyanın lider akü markası Varta'nın resmi satıcısıyız. Varta aküleri yüksek performans, uzun ömür ve güvenilirlik sunar. Tüm araç modelleri için uygun Varta akü çeşitleri stoklarımızda mevcuttur.</p>
+                    <a href="tel:05054212707" class="cta-button" style="padding: 12px 25px; font-size: 16px;">
+                        <i class="fas fa-phone-alt"></i> Varta Akü İçin Ara
+                    </a>
+                </div>
+                
+                <div class="brand-card">
+                    <img src="mutlu.webp" alt="Mutlu Akü - Türkiye'nin Yerli Akü Markası" class="brand-logo">
+                    <h3>Mutlu Akü</h3>
+                    <p>Türkiye'nin lider akü markası Mutlu, yerli üretim kalitesiyle öne çıkar. Mutlu aküler dayanıklılık ve uygun fiyat avantajını bir arada sunar. Tüm otomobil ve ticari araçlarınız için Mutlu akü temin ediyoruz.</p>
+                    <a href="tel:05054212707" class="cta-button" style="padding: 12px 25px; font-size: 16px;">
+                        <i class="fas fa-phone-alt"></i> Mutlu Akü İçin Ara
+                    </a>
+                </div>
+                
+                <div class="brand-card">
+                    <img src="inci.webp" alt="İnci Akü - Güvenilir ve Ekonomik Akü" class="brand-logo">
+                    <h3>İnci Akü</h3>
+                    <p>İnci akü, kaliteli ve ekonomik çözüm arayanlar için ideal seçenektir. Uzun ömürlü performansı ve uygun fiyat politikasıyla İnci aküler tüm araç sahiplerinin tercihidir. Motosiklet, otomobil ve ticari araçlar için.</p>
+                    <a href="tel:05054212707" class="cta-button" style="padding: 12px 25px; font-size: 16px;">
+                        <i class="fas fa-phone-alt"></i> İnci Akü İçin Ara
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hizmetler Bölümü -->
+    <section class="services" id="services">
+        <h2 class="section-title">Oto Elektrik Hizmetlerimiz</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-car-battery"></i>
+                </div>
+                <h3>Akü Değişimi & Şarjı</h3>
+                <p>Varta, Mutlu, İnci akü değişimi ve şarjı. Bitmiş akünüzü yerinde şarj ediyor veya yeni akü takıyoruz. Tüm araç modelleri için uygun akü stoklarımız mevcuttur.</p>
+                <a href="tel:05054212707" class="cta-button" style="padding: 12px 25px; font-size: 16px;">
+                    <i class="fas fa-phone-alt"></i> Akü İçin Ara
+                </a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Marş Sistemi Tamiri</h3>
+                <p>Marş motoru arızaları, marş problemi, marş dinamosu tamiri. Aracınız çalışmıyorsa, marş problemi yaşıyorsanız hemen bizi arayın. Uzman ekibimiz sorununuzu çözsün.</p>
+                <a href="tel:05054212707" class="cta-button" style="padding: 12px 25px; font-size: 16px;">
+                    <i class="fas fa-phone-alt"></i> Marş Tamiri İçin Ara
+                </a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Oto Elektrik Tamiri</h3>
+                <p>Elektrik sistemi arızaları, sigorta problemleri, kablo tamiri, aydınlatma arızaları. Oto elektrik konusunda tüm arızalarınız için uzman çözümler sunuyoruz.</p>
+                <a href="tel:05054212707" class="cta-button" style="padding: 12px 25px; font-size: 16px;">
+                    <i class="fas fa-phone-alt"></i> Elektrik Tamiri İçin Ara
+                </a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-road"></i>
+                </div>
+                <h3>Acil Yol Yardım</h3>
+                <p>Yolda kaldıysanız, aracınız çalışmıyorsa hemen bizi arayın. 7/24 acil yol yardım hizmetimizle en kısa sürede yanınızdayız. Tüm İstanbul ve çevre illerde hizmet veriyoruz.</p>
+                <a href="tel:05054212707" class="cta-button" style="padding: 12px 25px; font-size: 16px;">
+                    <i class="fas fa-phone-alt"></i> Acil Yardım İçin Ara
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Neden Biz Bölümü -->
+    <section class="why-us" id="why-us">
+        <div class="why-us-container">
+            <h2 class="section-title">Neden En Yakın Oto Elektrikçi Olarak Bizi Seçmelisiniz?</h2>
+            <div class="why-us-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>7/24 Acil Servis</h3>
+                    <p>Gece gündüz demeden 7 gün 24 saat acil yol yardım hizmeti sunuyoruz. Yolda kaldığınızda hemen arayın, en kısa sürede yanınızdayız.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Uzman Ekip</h3>
+                    <p>15+ yıllık tecrübeye sahip uzman oto elektrikçi ekibimizle tüm arızalarınıza profesyonel çözümler üretiyoruz.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Garantili Hizmet</h3>
+                    <p>Tüm tamir ve servis hizmetlerimiz garantilidir. Yapılan işlemlerin arkasında duruyor, müşteri memnuniyetini ön planda tutuyoruz.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Modern Ekipman</h3>
+                    <p>En son teknoloji oto elektrik tamir ekipmanlarıyla çalışıyor, doğru teşhis ve hızlı tamir imkanı sunuyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Telefon Bölümü -->
+    <section class="phone-section">
+        <h2>En Yakın Oto Elektrikçi Hemen Yanınızda!</h2>
+        <p>Yolda kaldıysanız, akünüz bittiyse, aracınız çalışmıyorsa hemen bizi arayın. Profesyonel ekibimiz en kısa sürede yanınızda olacak.</p>
+        <a href="tel:05054212707" class="phone-big">
+            <i class="fas fa-phone-alt"></i> 0505 421 27 07
+        </a>
+    </section>
+
+    <!-- SEO Makaleler Bölümü -->
+    <section class="seo-articles" id="articles">
+        <h2 class="section-title">Akü ve Oto Elektrik Hakkında Bilmeniz Gerekenler</h2>
+        
+        <div class="article-card">
+            <h3>Varta Akü: Neden Dünya Lideri?</h3>
+            <div class="article-content">
+                <div class="article-text">
+                    <p>Varta akü, dünya çapında en çok tercih edilen akü markalarından biridir. Almanya menşeili bu marka, yüksek teknoloji ve kalite standartlarıyla öne çıkar. Varta akülerin avantajları:</p>
+                    <ul>
+                        <li><strong>Uzun Ömür:</strong> Varta aküler diğer markalara göre %30 daha uzun ömürlüdür</li>
+                        <li><strong>Yüksek Performans:</strong> Soğuk havalarda bile güçlü marş performansı sunar</li>
+                        <li><strong>Güvenilirlik:</strong> Düşük self-deşarj oranıyla uzun süre şarjını korur</li>
+                        <li><strong>Çevre Dostu:</strong> %99 geri dönüştürülebilir malzemeden üretilir</li>
+                    </ul>
+                    <p>En yakın oto elektrikçi olarak, orijinal Varta akü temini ve montajı konusunda uzman hizmet sunuyoruz. Aracınız için en uygun Varta aküyü seçmenize yardımcı oluyoruz.</p>
+                </div>
+                <div class="article-image">
+                    <img src="varta.webp" alt="Varta Akü - Yüksek Performanslı Alman Kalitesi" class="article-img">
+                    <p class="article-img-caption">Varta Akü - Dünya Lideri Akü Markası</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="article-card">
+            <h3>Mutlu Akü: Türkiye'nin Gururu</h3>
+            <div class="article-content">
+                <div class="article-text">
+                    <p>Mutlu akü, Türkiye'nin ilk ve en büyük akü üreticisidir. 50 yılı aşkın tecrübesiyle yerli üretimin gurur kaynağıdır. Mutlu akülerin öne çıkan özellikleri:</p>
+                    <ul>
+                        <li><strong>Yerli Üretim:</strong> Tamamen Türkiye'de üretilir, milli ekonomiye katkı sağlar</li>
+                        <li><strong>Uygun Fiyat:</strong> İthal markalara göre daha ekonomiktir</li>
+                        <li><strong>Geniş Ürün Yelpazesi:</strong> Otomobil, motosiklet, ticari araçlar için çeşitli modeller</li>
+                        <li><strong>Yaygın Servis Ağı:</strong> Türkiye'nin her yerinde servis ve garantisi mevcuttur</li>
+                    </ul>
+                    <p>En yakın oto elektrikçi ekibimiz, Mutlu akü değişimi konusunda deneyimli teknisyenlerimizle hizmetinizde. Aracınızın modeline uygun Mutlu aküyü hemen temin ediyoruz.</p>
+                </div>
+                <div class="article-image">
+                    <img src="mutlu.webp" alt="Mutlu Akü - Türkiye'nin Yerli Akü Markası" class="article-img">
+                    <p class="article-img-caption">Mutlu Akü - Yerli Üretim Kalitesi</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="article-card">
+            <h3>İnci Akü: Kalite ve Ekonomi Bir Arada</h3>
+            <div class="article-content">
+                <div class="article-text">
+                    <p>İnci akü, kaliteli ve ekonomik akü arayanlar için ideal bir seçenektir. Türk malı olan İnci aküler, uzun ömür ve güvenilir performans sunar. İnci akünün avantajları:</p>
+                    <ul>
+                        <li><strong>Ekonomik Fiyat:</strong> Bütçe dostu fiyat politikası</li>
+                        <li><strong>Dayanıklılık:</strong> Zorlu hava koşullarına dayanıklı yapı</li>
+                        <li><strong>Geniş Kullanım Alanı:</strong> Otomobil, motosiklet, kamyon, iş makineleri için uygun</li>
+                        <li><strong>Kolay Temin:</strong> Türkiye'nin her yerinde kolayca bulunabilir</li>
+                    </ul>
+                    <p>En yakın oto elektrikçi servisimizle, İnci akü değişimi için hemen yanınızdayız. Aracınızın teknik özelliklerine uygun İnci aküyü belirleyip, profesyonel montaj hizmeti sunuyoruz.</p>
+                </div>
+                <div class="article-image">
+                    <img src="inci.webp" alt="İnci Akü - Ekonomik ve Kaliteli Akü Çözümü" class="article-img">
+                    <p class="article-img-caption">İnci Akü - Ekonomik ve Güvenilir</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="article-card">
+            <h3>Akü Değişimi Ne Zaman Yapılmalı? İşaretler Nelerdir?</h3>
+            <div class="article-content">
+                <div class="article-text">
+                    <p>Akü değişimi için doğru zamanı bilmek, yolda kalma riskinizi azaltır. Akünüzün değişme zamanı geldiğini gösteren işaretler:</p>
+                    <ul>
+                        <li><strong>Zayıf Marş:</strong> Aracınızı çalıştırmakta zorlanıyorsanız</li>
+                        <li><strong>Işık Problemleri:</strong> Far ışıkları normalden daha sönük yanıyorsa</li>
+                        <li><strong>Elektrikli Donanım Sorunları:</strong> Cam, kilit, klima gibi sistemler düzgün çalışmıyorsa</li>
+                        <li><strong>Fiziksel Deformasyon:</strong> Akü kutusu şişmiş veya deforme olmuşsa</li>
+                        <li><strong>Korozyon:</strong> Akü terminallerinde aşırı korozyon oluşmuşsa</li>
+                        <li><strong>Yaş Faktörü:</strong> Akünüz 3-5 yaşını doldurmuşsa</li>
+                    </ul>
+                    <p>En yakın oto elektrikçi olarak, akü testi ve değişimi konusunda profesyonel hizmet sunuyoruz. Akünüzün durumunu ücretsiz test edip, değişim gerekiyorsa en uygun aküyü öneriyoruz.</p>
+                </div>
+                <div class="article-image">
+                    <div style="background: #f0f9ff; padding: 20px; border-radius: 10px; text-align: center;">
+                        <i class="fas fa-car-battery" style="font-size: 80px; color: #3b82f6; margin-bottom: 15px;"></i>
+                        <p style="color: #1e3a8a; font-weight: 600;">Akünüzü Ücretsiz Test Ettirin!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>İletişim Bilgilerimiz</h3>
+                <p>En yakın oto elektrikçi olarak 7 gün 24 saat hizmetinizdeyiz. Acil durumlarda hemen arayın!</p>
+                
+                <div class="contact-details">
+                    <p><i class="fas fa-phone-alt"></i> <strong>Telefon:</strong> <a href="tel:05054212707" style="color: white; text-decoration: none;">0505 421 27 07</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/905054212707" target="_blank" style="color: white; text-decoration: none;">0505 421 27 07</a></p>
+                    <p><i class="fas fa-envelope"></i> <strong>E-posta:</strong> info@acilotoelektrikci.com</p>
+                    <p><i class="fas fa-clock"></i> <strong>Çalışma Saatleri:</strong> 7/24 Acil Servis</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Hizmet Bölgesi:</strong> İstanbul ve Çevre İller</p>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Ücretsiz Teknik Destek</h3>
+                <form id="serviceForm">
+                    <div class="form-group">
+                        <input type="text" id="userName" placeholder="Adınız Soyadınız" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="userPhone" placeholder="Telefon Numaranız" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="userLocation" placeholder="Bulunduğunuz Konum" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="problemDesc" placeholder="Aracınızın Marka/Modeli ve Sorun Açıklaması" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">ÜCRETSİZ TEKNİK DESTEK İSTE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-car-battery"></i> Acil <span>Oto Elektrikçi</span>
+                    </div>
+                    <p>En yakın oto elektrikçi olarak 7/24 acil yol yardım hizmeti sunuyoruz. Varta, Mutlu, İnci akü değişimi, marş tamiri ve tüm oto elektrik arızalarında yanınızdayız.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Hızlı Menü</h4>
+                    <ul>
+                        <li><a href="#home">Ana Sayfa</a></li>
+                        <li><a href="#brands">Akü Markaları</a></li>
+                        <li><a href="#services">Hizmetlerimiz</a></li>
+                        <li><a href="#why-us">Neden Biz?</a></li>
+                        <li><a href="#articles">Bilgi Bankası</a></li>
+                        <li><a href="#contact">İletişim</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Akü Markalarımız</h4>
+                    <ul>
+                        <li><a href="#brands">Varta Akü</a></li>
+                        <li><a href="#brands">Mutlu Akü</a></li>
+                        <li><a href="#brands">İnci Akü</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:05054212707" style="color: #60a5fa; text-decoration: none; font-weight: 600;">0505 421 27 07</a></p>
+                    <p><i class="fas fa-clock"></i> 7/24 Acil Servis</p>
+                    <p><i class="fas fa-map-marker-alt"></i> İstanbul ve Çevre İller</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Acil Oto Elektrikçi. Tüm hakları saklıdır. | En yakın oto elektrikçi arayışlarınızda profesyonel çözüm ortağınız.</p>
+                <p style="margin-top: 10px;">Acil durumlarda hemen arayın: <a href="tel:05054212707" style="color: #60a5fa; text-decoration: none; font-weight: 700;">0505 421 27 07</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobil Butonlar - Sağ Alt Köşe -->
+    <div class="mobile-buttons">
+        <a href="https://wa.me/905054212707" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:05054212707" class="call-btn">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <!-- Sohbet Balonu -->
+    <div class="chat-bubble" id="chatBubble">
+        <button class="close-chat" id="closeChat">&times;</button>
+        <p><strong>En yakın oto elektrikçi olarak hizmetinizdeyiz!</strong></p>
+        <p>Yolda mı kaldınız? Aracınız çalışmıyor mu? Hemen arayın, en kısa sürede yanınızdayız.</p>
+        <a href="tel:05054212707" class="cta-button">
+            <i class="fas fa-phone-alt"></i> Hemen Ara: 0505 421 27 07
+        </a>
+    </div>
+
+    <script>
+        // Mobil menü toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('active');
+        });
+        
+        // Mobil menüyü kapatma
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobileMenu').classList.remove('active');
+            });
+        });
+        
+        // Form gönderimi - WhatsApp'a yönlendirme
+        document.getElementById('serviceForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const userName = document.getElementById('userName').value;
+            const userPhone = document.getElementById('userPhone').value;
+            const userLocation = document.getElementById('userLocation').value;
+            const problemDesc = document.getElementById('problemDesc').value;
+            
+            // WhatsApp mesajı oluştur
+            const message = `Merhaba, en yakın oto elektrikçi arıyorum. Teknik destek talep ediyorum:%0A%0A` +
+                           `Ad Soyad: ${userName}%0A` +
+                           `Telefon: ${userPhone}%0A` +
+                           `Konum: ${userLocation}%0A` +
+                           `Sorun Açıklaması: ${problemDesc}%0A%0A` +
+                           `Lütfen benimle iletişime geçin.`;
+            
+            // WhatsApp'a yönlendir
+            window.open(`https://wa.me/905054212707?text=${message}`, '_blank');
+            
+            // Formu sıfırla
+            this.reset();
+            
+            // Kullanıcıya bilgi ver
+            alert('Teknik destek talebiniz WhatsApp\'a yönlendiriliyor. Mesajı göndermek için WhatsApp uygulamasını açmanız gerekebilir.');
+        });
+        
+        // Sohbet balonunu göster (5 saniye sonra)
+        setTimeout(function() {
+            document.getElementById('chatBubble').style.display = 'block';
+        }, 5000);
+        
+        // Sohbet balonunu kapat
+        document.getElementById('closeChat').addEventListener('click', function() {
+            document.getElementById('chatBubble').style.display = 'none';
+        });
+        
+        // Düzgün scroll için
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Sayfa yüklendiğinde
+        window.addEventListener('load', function() {
+            // Sayfa yüklendikten sonra küçük bir gecikmeyle başa dön
+            setTimeout(() => {
+                window.scrollTo(0, 0);
+            }, 100);
+        });
+    </script>
+</body>
+</html>
