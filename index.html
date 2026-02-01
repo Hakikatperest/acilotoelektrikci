@@ -321,22 +321,23 @@
         }
         
         .brands-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-    gap: 40px;
-    margin-bottom: 50px;
-}
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
         
         .brand-card {
             background: white;
             border-radius: 15px;
-            padding: 60px 40px;
+            overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
             text-align: center;
             position: relative;
-            overflow: hidden;
             border: 1px solid #e5e7eb;
+            display: flex;
+            flex-direction: column;
         }
         
         .brand-card:before {
@@ -354,20 +355,34 @@
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
         }
         
-        /* Resim Boyutları Büyütüldü */
-        .brand-logo {
-    width: 500px;
-    height: 500px;
-    object-fit: contain;
-    margin-bottom: 30px;
-    border-radius: 15px;
-    padding: 20px;
-    background: #eff6ff;
-    transition: transform 0.3s ease;
-}
+        /* Marka Resmi - Kartın Üst Kısmında */
+        .brand-image-container {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eff6ff;
+            padding: 30px;
+        }
         
-        .brand-card:hover .brand-logo {
+        .brand-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.5s ease;
+        }
+        
+        .brand-card:hover .brand-image {
             transform: scale(1.05);
+        }
+        
+        .brand-content {
+            padding: 40px 30px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
         }
         
         .brand-card h3 {
@@ -382,6 +397,7 @@
             margin-bottom: 25px;
             font-size: 1.05rem;
             line-height: 1.7;
+            flex: 1;
         }
         
         /* Hizmetler Bölümü */
@@ -984,15 +1000,24 @@
                 padding: 30px;
             }
             
-            .brand-logo {
-               width: 240px;
-        height: 240px;
+            .brand-image-container {
+                height: 250px;
+                padding: 20px;
+            }
+            
+            .brand-content {
+                padding: 30px 20px;
             }
             
             .hero .cta-button {
                 padding: 14px 25px;
                 font-size: 16px;
                 min-height: 55px;
+            }
+            
+            .brands-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
             }
         }
         
@@ -1004,11 +1029,7 @@
             .hero h1 {
                 font-size: 1.8rem;
             }
-            @media (max-width: 576px) {
-    .brand-card {
-        padding: 40px 25px;
-    }
-}
+            
             .hero h1 span {
                 font-size: 1.6rem;
             }
@@ -1038,30 +1059,18 @@
                 grid-template-columns: 1fr;
             }
             
-            .brand-logo {
-                 width: 220px;
-        height: 220px;
+            .brand-image-container {
+                height: 220px;
+            }
+            
+            .brand-card h3 {
+                font-size: 1.5rem;
+            }
+            
+            .brand-card p {
+                font-size: 1rem;
             }
         }
-        .brand-item {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.brand-full-image {
-    width: 100%;
-    max-height: 500px;
-    object-fit: contain;
-    background: #eff6ff;
-    border-radius: 15px;
-    padding: 20px;
-}
-
-/* Eski logo stilini iptal et */
-.brand-logo {
-    display: none;
-}
     </style>
 </head>
 <body>
@@ -1124,57 +1133,61 @@
     </section>
 
     <!-- Akü Markaları Bölümü -->
-   <section class="brands-section" id="brands">
-    <div class="brands-container">
-        <h2 class="section-title">Resmi Satıcısı Olduğumuz Akü Markaları</h2>
+    <section class="brands-section" id="brands">
+        <div class="brands-container">
+            <h2 class="section-title">Resmi Satıcısı Olduğumuz Akü Markaları</h2>
 
-        <div class="brands-grid">
-
-            <div class="brand-item">
-                <img src="https://www.acilotoelektrikci.com/images/varta.webp"
-                     alt="Varta Akü"
-                     class="brand-full-image">
-
+            <div class="brands-grid">
+                <!-- Varta Akü Kartı -->
                 <div class="brand-card">
-                    <h3>Varta Akü</h3>
-                    <p>Dünyanın lider akü markası Varta'nın resmi satıcısıyız. Varta aküleri yüksek performans, uzun ömür ve güvenilirlik sunar.</p>
-                    <a href="tel:05054212707" class="cta-button">
-                        <i class="fas fa-phone-alt"></i> Varta Akü İçin Ara
-                    </a>
+                    <div class="brand-image-container">
+                        <img src="https://www.acilotoelektrikci.com/images/varta.webp"
+                             alt="Varta Akü"
+                             class="brand-image">
+                    </div>
+                    <div class="brand-content">
+                        <h3>Varta Akü</h3>
+                        <p>Dünyanın lider akü markası Varta'nın resmi satıcısıyız. Varta aküleri yüksek performans, uzun ömür ve güvenilirlik sunar. Soğuk havalarda bile güçlü marş performansı sağlar.</p>
+                        <a href="tel:05054212707" class="cta-button">
+                            <i class="fas fa-phone-alt"></i> Varta Akü İçin Ara
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mutlu Akü Kartı -->
+                <div class="brand-card">
+                    <div class="brand-image-container">
+                        <img src="https://www.acilotoelektrikci.com/images/mutlu.webp"
+                             alt="Mutlu Akü"
+                             class="brand-image">
+                    </div>
+                    <div class="brand-content">
+                        <h3>Mutlu Akü</h3>
+                        <p>Türkiye'nin lider akü markası Mutlu, yerli üretim kalitesiyle öne çıkar. Dayanıklılık ve uygun fiyat avantajını bir arada sunar. 50 yılı aşkın tecrübesiyle güven verir.</p>
+                        <a href="tel:05054212707" class="cta-button">
+                            <i class="fas fa-phone-alt"></i> Mutlu Akü İçin Ara
+                        </a>
+                    </div>
+                </div>
+
+                <!-- İnci Akü Kartı -->
+                <div class="brand-card">
+                    <div class="brand-image-container">
+                        <img src="https://www.acilotoelektrikci.com/images/inci.webp"
+                             alt="İnci Akü"
+                             class="brand-image">
+                    </div>
+                    <div class="brand-content">
+                        <h3>İnci Akü</h3>
+                        <p>İnci akü, kaliteli ve ekonomik çözüm arayanlar için ideal bir seçenektir. Uzun ömürlü performansı ve uygun fiyatıyla öne çıkar. Türk malı olmasıyla gurur duyuyoruz.</p>
+                        <a href="tel:05054212707" class="cta-button">
+                            <i class="fas fa-phone-alt"></i> İnci Akü İçin Ara
+                        </a>
+                    </div>
                 </div>
             </div>
-
-            <div class="brand-item">
-                <img src="https://www.acilotoelektrikci.com/images/mutlu.webp"
-                     alt="Mutlu Akü"
-                     class="brand-full-image">
-
-                <div class="brand-card">
-                    <h3>Mutlu Akü</h3>
-                    <p>Türkiye'nin lider akü markası Mutlu, yerli üretim kalitesiyle öne çıkar. Dayanıklılık ve uygun fiyat avantajını bir arada sunar.</p>
-                    <a href="tel:05054212707" class="cta-button">
-                        <i class="fas fa-phone-alt"></i> Mutlu Akü İçin Ara
-                    </a>
-                </div>
-            </div>
-
-            <div class="brand-item">
-                <img src="https://www.acilotoelektrikci.com/images/inci.webp"
-                     alt="İnci Akü"
-                     class="brand-full-image">
-
-                <div class="brand-card">
-                    <h3>İnci Akü</h3>
-                    <p>İnci akü, kaliteli ve ekonomik çözüm arayanlar için ideal bir seçenektir. Uzun ömürlü performansı ve uygun fiyatıyla öne çıkar.</p>
-                    <a href="tel:05054212707" class="cta-button">
-                        <i class="fas fa-phone-alt"></i> İnci Akü İçin Ara
-                    </a>
-                </div>
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Hizmetler Bölümü -->
     <section class="services" id="services">
@@ -1429,7 +1442,7 @@
                 
                 <div class="footer-contact">
                     <h4>İletişim</h4>
-                    <p><i class="fas fa-phone-alt"></i> <a href="tel:05379173673" style="color: #60a5fa; text-decoration: none; font-weight: 600;">0537 917 36 73</a></p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:05054212707" style="color: #60a5fa; text-decoration: none; font-weight: 600;">0505 421 27 07</a></p>
                     <p><i class="fas fa-clock"></i> 7/24 Acil Servis</p>
                     <p><i class="fas fa-map-marker-alt"></i> İstanbul ve Çevre İller</p>
                 </div>
@@ -1457,8 +1470,8 @@
         <button class="close-chat" id="closeChat">&times;</button>
         <p><strong>En yakın oto elektrikçi olarak hizmetinizdeyiz!</strong></p>
         <p>Yolda mı kaldınız? Aracınız çalışmıyor mu? Hemen arayın, en kısa sürede yanınızdayız.</p>
-        <a href="tel:05379173673" class="cta-button">
-            <i class="fas fa-phone-alt"></i> Hemen Ara: 0537 917 36 73
+        <a href="tel:05054212707" class="cta-button">
+            <i class="fas fa-phone-alt"></i> Hemen Ara: 0505 421 27 07
         </a>
     </div>
 
