@@ -870,10 +870,77 @@
             color: rgba(255, 255, 255, 0.9);
         }
         
-        /* Footer */
+        /* Akü Servisi Makale Bölümleri */
+        .battery-service-articles {
+            background-color: var(--light-color);
+            padding: 90px 0;
+        }
+        
+        .article-section {
+            margin-bottom: 70px;
+        }
+        
+        .article-content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 400px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .article-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .article-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .article-text {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .article-text h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+        
+        .article-text p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+            color: #555;
+        }
+        
+        .article-text ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .article-text li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        
+        /* Footer - MAVİ ARKA PLANLI */
         footer {
-            background-color: var(--primary-color);
-            color: #bdc3c7;
+            background: var(--gradient-blue);
+            color: #e6f2ff;
             padding: 60px 0 25px;
             text-align: center;
         }
@@ -886,11 +953,11 @@
         }
         
         .footer-logo span {
-            color: var(--secondary-color);
+            color: #e6f2ff;
         }
         
         footer p {
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(255, 255, 255, 0.9);
             max-width: 600px;
             margin: 0 auto 30px;
         }
@@ -898,9 +965,9 @@
         .footer-copyright {
             margin-top: 40px;
             padding-top: 25px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
             font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.6);
+            color: rgba(255, 255, 255, 0.8);
         }
         
         /* Floating Action Buttons */
@@ -1004,6 +1071,10 @@
             
             .flip-card {
                 height: 320px;
+            }
+            
+            .article-image {
+                height: 350px;
             }
         }
         
@@ -1118,6 +1189,15 @@
             .brand-item img {
                 padding: 30px;
             }
+            
+            /* Makale responsive */
+            .article-image {
+                height: 300px;
+            }
+            
+            .article-text {
+                padding: 30px;
+            }
         }
         
         @media (max-width: 576px) {
@@ -1171,6 +1251,19 @@
             .brand-item img {
                 padding: 25px;
             }
+            
+            /* Makale responsive */
+            .article-image {
+                height: 250px;
+            }
+            
+            .article-text {
+                padding: 20px;
+            }
+            
+            .article-text h3 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
@@ -1186,6 +1279,7 @@
                     <li><a href="#home">Ana Sayfa</a></li>
                     <li><a href="#services">Hizmetlerimiz</a></li>
                     <li><a href="#brands">Akü Markaları</a></li>
+                    <li><a href="#articles">Akü Servis Makaleleri</a></li>
                     <li><a href="#reviews">Müşteri Yorumları</a></li>
                     <li><a href="#process">Hizmet Süreci</a></li>
                     <li><a href="#faq">SSS</a></li>
@@ -1207,6 +1301,7 @@
                     <li><a href="#home">Ana Sayfa</a></li>
                     <li><a href="#services">Hizmetlerimiz</a></li>
                     <li><a href="#brands">Akü Markaları</a></li>
+                    <li><a href="#articles">Akü Servis Makaleleri</a></li>
                     <li><a href="#reviews">Müşteri Yorumları</a></li>
                     <li><a href="#process">Hizmet Süreci</a></li>
                     <li><a href="#faq">SSS</a></li>
@@ -1389,6 +1484,124 @@
                     <div class="brand-overlay">
                         <h3>İnci Akü</h3>
                         <p>Ekonomik ve güvenilir çözüm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Akü Servis Makaleleri Section -->
+    <section class="battery-service-articles" id="articles">
+        <div class="container">
+            <div class="section-title">
+                <h2>Akü Servis Makaleleri</h2>
+                <p>Akü bakımı, değişimi ve servis hakkında bilmeniz gereken her şey</p>
+            </div>
+            
+            <!-- Mutlu Akü Servisi Makalesi -->
+            <div class="article-section">
+                <div class="article-content">
+                    <div class="article-image">
+                        <img src="https://www.acilotoelektrikci.com/images/mutlu2.webp" alt="Mutlu Akü Servisi - En Yakın Akücü">
+                    </div>
+                    <div class="article-text">
+                        <h3>Mutlu Akü Servisi: Türkiye'nin Yerli Gücü</h3>
+                        <p>Mutlu Akü, Türkiye'nin ilk ve en büyük akü üreticisi olarak 50 yılı aşkın süredir otomotiv sektörüne yön veriyor. Yerli üretim gücüyle hem ekonomik hem de yüksek performanslı akü çözümleri sunan Mutlu Akü, özellikle Türk iklim koşullarına uygun tasarımlarıyla öne çıkıyor.</p>
+                        
+                        <p><strong>Mutlu Akü Servisinin Avantajları:</strong></p>
+                        <ul>
+                            <li><strong>Yerli Üretim:</strong> Tamamen Türkiye'de üretilen akülerle hızlı yedek parça temini ve uygun fiyat avantajı</li>
+                            <li><strong>Türk İklimine Uygun:</strong> Sıcak yaz günleri ve soğuk kış şartları için özel olarak geliştirilmiş teknoloji</li>
+                            <li><strong>Geniş Ürün Yelpazesi:</strong> Otomobil, kamyon, motosiklet, güneş enerjisi sistemleri ve daha birçok alana uygun akü çeşitleri</li>
+                            <li><strong>Uzun Ömür:</strong> Kaliteli malzeme ve üretim teknikleri sayesinde uzun kullanım ömrü</li>
+                            <li><strong>Çevre Dostu:</strong> %99 geri dönüştürülebilir malzeme kullanımı ve çevreci üretim süreçleri</li>
+                        </ul>
+                        
+                        <p><strong>Mutlu Akü Değişim Süreci:</strong></p>
+                        <p>Mutlu akü değişimi için uzman ekibimiz aracınızın modeline ve kullanım koşullarına uygun aküyü belirler. Eski akünüzü söküp yeni Mutlu aküyü profesyonelce monte ederiz. İşlem sonunda garanti belgesini teslim eder ve akünüzün performansını test ederiz.</p>
+                        
+                        <p><strong>Neden Mutlu Akü Tercih Etmelisiniz?</strong></p>
+                        <p>Mutlu Akü, Türkiye'de üretildiği için ithal akülere göre daha ekonomik fiyatlara sahiptir. Aynı zamanda yerli üretim olması nedeniyle yedek parça temini ve servis hizmetleri daha hızlıdır. Özellikle orta segment araçlar için ideal bir seçim olan Mutlu Akü, uzun ömürlü performansıyla dikkat çeker.</p>
+                        
+                        <p>En yakın akücü olarak Mutlu akü servisi konusunda uzman ekibimizle hizmetinizdeyiz. <strong>7/24 acil yol yardım</strong> hattımızdan bize ulaşabilirsiniz.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Varta Akü Servisi Makalesi -->
+            <div class="article-section">
+                <div class="article-content">
+                    <div class="article-image">
+                        <img src="https://www.acilotoelektrikci.com/images/varta2.webp" alt="Varta Akü Servisi - En Yakın Akücü">
+                    </div>
+                    <div class="article-text">
+                        <h3>Varta Akü Servisi: Alman Kalitesi ve Teknolojisi</h3>
+                        <p>Varta Akü, 130 yılı aşkın deneyimiyle dünyanın önde gelen akü üreticilerinden biridir. Alman mühendisliğinin titizliği ve ileri teknolojisiyle üretilen Varta aküler, özellikle yüksek performans bekleyen premium araç sahipleri tarafından tercih edilmektedir.</p>
+                        
+                        <p><strong>Varta Akü Servisinin Üstünlükleri:</strong></p>
+                        <ul>
+                            <li><strong>Alman Kalitesi:</strong> Yüksek kalite standartları ve titiz üretim süreçleri</li>
+                            <li><strong>İleri Teknoloji:</strong> AGM (Absorbent Glass Mat) ve EFB (Enhanced Flooded Battery) gibi gelişmiş teknolojiler</li>
+                            <li><strong>Start-Stop Uyumluluğu:</strong> Modern araçlardaki start-stop sistemlerine özel tasarımlar</li>
+                            <li><strong>Yüksek Güç Yoğunluğu:</strong> Küçük boyutlarda yüksek performans sunma</li>
+                            <li><strong>Uzun Ömür Garantisi:</strong> 4-5 yıla varan uzun garanti süreleri</li>
+                        </ul>
+                        
+                        <p><strong>Varta Akü Çeşitleri:</strong></p>
+                        <p>Varta, farklı araç tipleri ve ihtiyaçlar için çeşitli akü serileri sunar:</p>
+                        <ul>
+                            <li><strong>Varta Blue Dynamic:</strong> Geleneksel araçlar için ekonomik ve güvenilir çözüm</li>
+                            <li><strong>Varta Silver Dynamic:</strong> Yüksek performanslı araçlar için üstün teknoloji</li>
+                            <li><strong>Varta Black Dynamic:</strong> Ağır hizmet araçları ve ticari araçlar için dayanıklı tasarım</li>
+                            <li><strong>Varta Start-Stop Plus:</strong> Start-stop sistemli araçlar için özel tasarım</li>
+                        </ul>
+                        
+                        <p><strong>Varta Akü Değişiminin Önemi:</strong></p>
+                        <p>Varta akü değişimi sırasında dikkat edilmesi gereken en önemli nokta, aracınıza uygun akü modelinin seçilmesidir. Yanlış akü seçimi, aracın elektrik sistemi için ciddi sorunlara yol açabilir. Uzman ekibimiz, aracınızın teknik özelliklerini değerlendirerek en uygun Varta aküyü belirler ve profesyonel montaj hizmeti sunar.</p>
+                        
+                        <p><strong>Neden Varta Akü Tercih Etmelisiniz?</strong></p>
+                        <p>Varta aküler, özellikle Alman ve premium segment araçlar için ideal bir seçimdir. Yüksek çalışma sıcaklıklarına dayanıklılığı, uzun ömrü ve start-stop sistemlerindeki üstün performansı ile öne çıkar. Ayrıca Varta'nın geniş servis ağı sayesinde Türkiye'nin her yerinde garantili servis imkanı sunulmaktadır.</p>
+                        
+                        <p>En yakın akücü olarak Varta akü servisi konusunda yetkin ekibimizle yanınızdayız. <strong>7/24 acil yol yardım</strong> hattımızdan bize ulaşabilirsiniz.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- İnci Akü Servisi Makalesi -->
+            <div class="article-section">
+                <div class="article-content">
+                    <div class="article-image">
+                        <img src="https://www.acilotoelektrikci.com/images/inci2.webp" alt="İnci Akü Servisi - En Yakın Akücü">
+                    </div>
+                    <div class="article-text">
+                        <h3>İnci Akü Servisi: Ekonomik ve Güvenilir Çözüm</h3>
+                        <p>İnci Akü, Türkiye'nin önde gelen akü üreticilerinden biri olarak hem ekonomik hem de kaliteli akü çözümleri sunmaktadır. Özellikle bütçe dostu fiyatlarıyla dikkat çeken İnci Akü, temel ihtiyaçları karşılayan güvenilir performansıyla binlerce müşterinin tercihidir.</p>
+                        
+                        <p><strong>İnci Akü Servisinin Faydaları:</strong></p>
+                        <ul>
+                            <li><strong>Ekonomik Fiyat:</strong> Diğer markalara göre daha uygun fiyatlı akü çözümleri</li>
+                            <li><strong>Temel İhtiyaçları Karşılama:</strong> Standart araçların elektrik ihtiyaçlarını güvenilir şekilde karşılama</li>
+                            <li><strong>Geniş Dağıtım Ağı:</strong> Türkiye genelinde yaygın satış ve servis ağı</li>
+                            <li><strong>Kolay Temin:</strong> Stoklarda sürekli bulunabilirlik ve hızlı tedarik</li>
+                            <li><strong>Çevre Dostu Üretim:</strong> Geri dönüştürülebilir malzeme kullanımı</li>
+                        </ul>
+                        
+                        <p><strong>İnci Akü Modelleri:</strong></p>
+                        <p>İnci Akü, farklı araç tipleri için çeşitli modeller sunmaktadır:</p>
+                        <ul>
+                            <li><strong>İnci Standart Seri:</strong> Geleneksel araçlar için temel ihtiyaçları karşılayan ekonomik aküler</li>
+                            <li><strong>İnci Premium Seri:</strong> Daha yüksek performans bekleyen araçlar için geliştirilmiş modeller</li>
+                            <li><strong>İnci Commercial:</strong> Ticari araçlar ve ağır hizmet araçları için dayanıklı tasarımlar</li>
+                            <li><strong>İnci Motorcycle:</strong> Motosikletler için özel olarak geliştirilmiş küçük aküler</li>
+                        </ul>
+                        
+                        <p><strong>İnci Akü Değişim Süreci:</strong></p>
+                        <p>İnci akü değişimi için uzman ekibimiz öncelikle aracınızın teknik özelliklerini değerlendirir. Aracınızın akü ihtiyacını belirledikten sonra en uygun İnci akü modelini seçeriz. Eski akünüzü söküp yeni İnci aküyü montajını yaparız. İşlem sonunda akünün doğru çalıştığını test eder ve garanti belgesini teslim ederiz.</p>
+                        
+                        <p><strong>Neden İnci Akü Tercih Etmelisiniz?</strong></p>
+                        <p>İnci Akü, özellikle eski model araçlar ve temel ihtiyaçları olan sürücüler için ideal bir seçimdir. Ekonomik fiyatlarıyla bütçe dostu bir çözüm sunarken, güvenilir performansıyla da uzun yıllar sorunsuz kullanım imkanı sağlar. İnci Akü'nün Türkiye genelindeki yaygın servis ağı sayesinde, nerede olursanız olun garantili servis imkanından yararlanabilirsiniz.</p>
+                        
+                        <p>İnci akü değişimi ve servisi için en yakın akücü ekibimiz her zaman hazır. <strong>7/24 acil yol yardım</strong> hattımızdan bize ulaşabilir, ekonomik ve güvenilir İnci akü çözümlerimizden yararlanabilirsiniz.</p>
                     </div>
                 </div>
             </div>
@@ -1596,7 +1809,7 @@
                     </div>
                 </div>
                 
-                .faq-item {
+                <div class="faq-item">
                     <div class="faq-question">
                         <h3>Garanti süreniz ne kadar?</h3>
                         <i class="fas fa-chevron-down"></i>
@@ -1639,7 +1852,7 @@
         </div>
     </section>
     
-    <!-- Footer -->
+    <!-- Footer - MAVİ ARKA PLANLI -->
     <footer>
         <div class="container">
             <div class="footer-logo">En Yakın <span>Akücü</span></div>
