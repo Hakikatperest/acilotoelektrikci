@@ -11,10 +11,10 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acil Oto Elektrikçi | En Yakın Oto Elektrik Tamir Servisi | 7/24 Yol Yardım</title>
-    <meta name="description" content="En yakın oto elektrikçi arıyorsanız doğru adrestesiniz! 7/24 acil yol yardım, Varta, Mutlu, İnci akü değişimi, marş tamiri, oto elektrik arızaları. Hemen ara: 0505 421 27 07">
-    <meta name="keywords" content="en yakın oto elektrikçi, acil oto elektrikçi, varta akü, mutlu akü, inci akü, akü değişimi, marş tamiri, yol yardım, acil yol yardım">
-    <meta name="author" content="Acil Oto Elektrikçi">
+    <title>En Yakın Akücü | Acil Oto Elektrikçi | 7/24 Yol Yardım</title>
+    <meta name="description" content="En yakın akücü arıyorsanız doğru adrestesiniz! 7/24 acil yol yardım, Varta, Mutlu, İnci akü değişimi, marş tamiri, oto elektrik arızaları. Hemen ara: 0505 421 27 07">
+    <meta name="keywords" content="en yakın akücü, en yakın oto elektrikçi, acil oto elektrikçi, varta akü, mutlu akü, inci akü, akü değişimi, marş tamiri, yol yardım, acil yol yardım">
+    <meta name="author" content="En Yakın Akücü">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Temel Stiller */
@@ -176,15 +176,22 @@
             width: 100%;
         }
         
-        /* Hero Bölümü */
+        /* Hero Bölümü - GÜNCELLENDİ */
         .hero {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(59, 130, 246, 0.9)), url('https://www.acilotoelektrikci.com/images/aku.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             color: white;
             padding: 160px 20px 100px;
             text-align: center;
             margin-top: 70px;
             position: relative;
             overflow: hidden;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .hero:before {
@@ -202,7 +209,11 @@
             max-width: 900px;
             margin: 0 auto;
             position: relative;
-            z-index: 1;
+            z-index: 2;
+            background: rgba(15, 23, 42, 0.7);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
         }
         
         .hero h1 {
@@ -210,6 +221,7 @@
             margin-bottom: 25px;
             font-weight: 800;
             line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         
         .hero h1 span {
@@ -225,6 +237,7 @@
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
         
         .hero-buttons {
@@ -322,22 +335,21 @@
         
         .brands-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
             margin-bottom: 50px;
         }
         
         .brand-card {
             background: white;
             border-radius: 15px;
-            overflow: hidden;
+            padding: 40px 30px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
             text-align: center;
             position: relative;
+            overflow: hidden;
             border: 1px solid #e5e7eb;
-            display: flex;
-            flex-direction: column;
         }
         
         .brand-card:before {
@@ -355,34 +367,20 @@
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
         }
         
-        /* Marka Resmi - Kartın Üst Kısmında */
-        .brand-image-container {
-            width: 100%;
-            height: 300px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #eff6ff;
-            padding: 30px;
-        }
-        
-        .brand-image {
-            width: 100%;
-            height: 100%;
+        /* Resim Boyutları Büyütüldü */
+        .brand-logo {
+            width: 200px;
+            height: 200px;
             object-fit: contain;
-            transition: transform 0.5s ease;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            padding: 15px;
+            background: #eff6ff;
+            transition: transform 0.3s ease;
         }
         
-        .brand-card:hover .brand-image {
+        .brand-card:hover .brand-logo {
             transform: scale(1.05);
-        }
-        
-        .brand-content {
-            padding: 40px 30px;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
         }
         
         .brand-card h3 {
@@ -397,7 +395,6 @@
             margin-bottom: 25px;
             font-size: 1.05rem;
             line-height: 1.7;
-            flex: 1;
         }
         
         /* Hizmetler Bölümü */
@@ -952,6 +949,11 @@
         @media (max-width: 768px) {
             .hero {
                 padding: 140px 20px 80px;
+                min-height: 70vh;
+            }
+            
+            .hero-content {
+                padding: 30px 20px;
             }
             
             .hero h1 {
@@ -1000,13 +1002,9 @@
                 padding: 30px;
             }
             
-            .brand-image-container {
-                height: 250px;
-                padding: 20px;
-            }
-            
-            .brand-content {
-                padding: 30px 20px;
+            .brand-logo {
+                width: 180px;
+                height: 180px;
             }
             
             .hero .cta-button {
@@ -1014,16 +1012,15 @@
                 font-size: 16px;
                 min-height: 55px;
             }
-            
-            .brands-grid {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
         }
         
         @media (max-width: 576px) {
             .logo-text {
                 font-size: 20px;
+            }
+            
+            .hero {
+                min-height: 60vh;
             }
             
             .hero h1 {
@@ -1059,16 +1056,9 @@
                 grid-template-columns: 1fr;
             }
             
-            .brand-image-container {
-                height: 220px;
-            }
-            
-            .brand-card h3 {
-                font-size: 1.5rem;
-            }
-            
-            .brand-card p {
-                font-size: 1rem;
+            .brand-logo {
+                width: 160px;
+                height: 160px;
             }
         }
     </style>
@@ -1082,7 +1072,7 @@
                     <i class="fas fa-car-battery"></i>
                 </div>
                 <div class="logo-text">
-                    Acil <span>Oto Elektrikçi</span>
+                    En Yakın <span>Akücü</span>
                 </div>
             </a>
             
@@ -1116,16 +1106,16 @@
         </div>
     </header>
 
-    <!-- Hero Bölümü -->
+    <!-- Hero Bölümü - GÜNCELLENDİ -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1><span>En Yakın Oto Elektrikçi</span>Acil Oto Elektrik Tamir Servisi</h1>
-            <p>Yolda mı kaldınız? Aracınız çalışmıyor mu? En yakın oto elektrikçi olarak 7/24 acil yol yardım hizmeti sunuyoruz. Profesyonel ekibimizle en kısa sürede yanınızdayız.</p>
+            <h1><span>En Yakın Akücü</span>Acil Oto Elektrik Tamir Servisi</h1>
+            <p>Yolda mı kaldınız? Aracınız çalışmıyor mu? En yakın akücü olarak 7/24 acil yol yardım hizmeti sunuyoruz. Profesyonel ekibimizle en kısa sürede yanınızdayız.</p>
             <div class="hero-buttons">
                 <a href="tel:05054212707" class="cta-button">
                     <i class="fas fa-phone-alt"></i> Hemen Ara: 0505 421 27 07
                 </a>
-                <a href="https://wa.me/905054212707?text=Merhaba,%20en%20yakın%20oto%20elektrikçi%20aranıyorum.%20Yardıma%20ihtiyacım%20var." target="_blank" class="cta-button whatsapp-button">
+                <a href="https://wa.me/905054212707?text=Merhaba,%20en%20yakın%20akücü%20aranıyorum.%20Yardıma%20ihtiyacım%20var." target="_blank" class="cta-button whatsapp-button">
                     <i class="fab fa-whatsapp"></i> WhatsApp'tan Yaz
                 </a>
             </div>
@@ -1136,54 +1126,32 @@
     <section class="brands-section" id="brands">
         <div class="brands-container">
             <h2 class="section-title">Resmi Satıcısı Olduğumuz Akü Markaları</h2>
-
             <div class="brands-grid">
-                <!-- Varta Akü Kartı -->
                 <div class="brand-card">
-                    <div class="brand-image-container">
-                        <img src="https://www.acilotoelektrikci.com/images/varta.webp"
-                             alt="Varta Akü"
-                             class="brand-image">
-                    </div>
-                    <div class="brand-content">
-                        <h3>Varta Akü</h3>
-                        <p>Dünyanın lider akü markası Varta'nın resmi satıcısıyız. Varta aküleri yüksek performans, uzun ömür ve güvenilirlik sunar. Soğuk havalarda bile güçlü marş performansı sağlar.</p>
-                        <a href="tel:05054212707" class="cta-button">
-                            <i class="fas fa-phone-alt"></i> Varta Akü İçin Ara
-                        </a>
-                    </div>
+                    <img src="https://www.acilotoelektrikci.com/images/varta.webp" alt="Varta Akü - En Kaliteli Akü Markası" class="brand-logo">
+                    <h3>Varta Akü</h3>
+                    <p>Dünyanın lider akü markası Varta'nın resmi satıcısıyız. Varta aküleri yüksek performans, uzun ömür ve güvenilirlik sunar. Tüm araç modelleri için uygun Varta akü çeşitleri stoklarımızda mevcuttur.</p>
+                    <a href="tel:05054212707" class="cta-button">
+                        <i class="fas fa-phone-alt"></i> Varta Akü İçin Ara
+                    </a>
                 </div>
-
-                <!-- Mutlu Akü Kartı -->
+                
                 <div class="brand-card">
-                    <div class="brand-image-container">
-                        <img src="https://www.acilotoelektrikci.com/images/mutlu.webp"
-                             alt="Mutlu Akü"
-                             class="brand-image">
-                    </div>
-                    <div class="brand-content">
-                        <h3>Mutlu Akü</h3>
-                        <p>Türkiye'nin lider akü markası Mutlu, yerli üretim kalitesiyle öne çıkar. Dayanıklılık ve uygun fiyat avantajını bir arada sunar. 50 yılı aşkın tecrübesiyle güven verir.</p>
-                        <a href="tel:05054212707" class="cta-button">
-                            <i class="fas fa-phone-alt"></i> Mutlu Akü İçin Ara
-                        </a>
-                    </div>
+                    <img src="https://www.acilotoelektrikci.com/images/mutlu.webp" alt="Mutlu Akü - Türkiye'nin Yerli Akü Markası" class="brand-logo">
+                    <h3>Mutlu Akü</h3>
+                    <p>Türkiye'nin lider akü markası Mutlu, yerli üretim kalitesiyle öne çıkar. Mutlu aküler dayanıklılık ve uygun fiyat avantajını bir arada sunar. Tüm otomobil ve ticari araçlarınız için Mutlu akü temin ediyoruz.</p>
+                    <a href="tel:05054212707" class="cta-button">
+                        <i class="fas fa-phone-alt"></i> Mutlu Akü İçin Ara
+                    </a>
                 </div>
-
-                <!-- İnci Akü Kartı -->
+                
                 <div class="brand-card">
-                    <div class="brand-image-container">
-                        <img src="https://www.acilotoelektrikci.com/images/inci.webp"
-                             alt="İnci Akü"
-                             class="brand-image">
-                    </div>
-                    <div class="brand-content">
-                        <h3>İnci Akü</h3>
-                        <p>İnci akü, kaliteli ve ekonomik çözüm arayanlar için ideal bir seçenektir. Uzun ömürlü performansı ve uygun fiyatıyla öne çıkar. Türk malı olmasıyla gurur duyuyoruz.</p>
-                        <a href="tel:05054212707" class="cta-button">
-                            <i class="fas fa-phone-alt"></i> İnci Akü İçin Ara
-                        </a>
-                    </div>
+                    <img src="https://www.acilotoelektrikci.com/images/inci.webp" alt="İnci Akü - Güvenilir ve Ekonomik Akü" class="brand-logo">
+                    <h3>İnci Akü</h3>
+                    <p>İnci akü, kaliteli ve ekonomik çözüm arayanlar için ideal seçenektir. Uzun ömürlü performansı ve uygun fiyat politikasıyla İnci aküler tüm araç sahiplerinin tercihidir. Motosiklet, otomobil ve ticari araçlar için.</p>
+                    <a href="tel:05054212707" class="cta-button">
+                        <i class="fas fa-phone-alt"></i> İnci Akü İçin Ara
+                    </a>
                 </div>
             </div>
         </div>
@@ -1231,7 +1199,7 @@
                     <i class="fas fa-road"></i>
                 </div>
                 <h3>Acil Yol Yardım</h3>
-                <p>Yolda kaldıysanız, aracınız çalışmıyorsa hemen bizi arayın. 7/24 acil yol yardım hizmetimizle en kısa sürede yanınızdayız.</p>
+                <p>Yolda kaldıysanız, aracınız çalışmıyorsa hemen bizi arayın. 7/24 acil yol yardım hizmetimizle en kısa sürede yanınızdayız. En Yakın Akücü olarak hizmet veriyoruz.</p>
                 <a href="tel:05054212707" class="cta-button">
                     <i class="fas fa-phone-alt"></i> Acil Yardım İçin Ara
                 </a>
@@ -1242,7 +1210,7 @@
     <!-- Neden Biz Bölümü -->
     <section class="why-us" id="why-us">
         <div class="why-us-container">
-            <h2 class="section-title">Neden En Yakın Oto Elektrikçi Olarak Bizi Seçmelisiniz?</h2>
+            <h2 class="section-title">Neden En Yakın Akücü Olarak Bizi Seçmelisiniz?</h2>
             <div class="why-us-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -1281,7 +1249,7 @@
 
     <!-- Telefon Bölümü -->
     <section class="phone-section">
-        <h2>En Yakın Oto Elektrikçi Hemen Yanınızda!</h2>
+        <h2>En Yakın Akücü Hemen Yanınızda!</h2>
         <p>Yolda kaldıysanız, akünüz bittiyse, aracınız çalışmıyorsa hemen bizi arayın. Profesyonel ekibimiz en kısa sürede yanınızda olacak.</p>
         <a href="tel:05054212707" class="phone-big">
             <i class="fas fa-phone-alt"></i> 0505 421 27 07
@@ -1303,7 +1271,7 @@
                         <li><strong>Güvenilirlik:</strong> Düşük self-deşarj oranıyla uzun süre şarjını korur</li>
                         <li><strong>Çevre Dostu:</strong> %99 geri dönüştürülebilir malzemeden üretilir</li>
                     </ul>
-                    <p>En yakın oto elektrikçi olarak, orijinal Varta akü temini ve montajı konusunda uzman hizmet sunuyoruz. Aracınız için en uygun Varta aküyü seçmenize yardımcı oluyoruz.</p>
+                    <p>En yakın akücü olarak, orijinal Varta akü temini ve montajı konusunda uzman hizmet sunuyoruz. Aracınız için en uygun Varta aküyü seçmenize yardımcı oluyoruz.</p>
                 </div>
                 <div class="article-image">
                     <img src="https://www.acilotoelektrikci.com/images/varta2.webp" alt="Varta Akü - Yüksek Performanslı Alman Kalitesi" class="article-img">
@@ -1323,7 +1291,7 @@
                         <li><strong>Geniş Ürün Yelpazesi:</strong> Otomobil, motosiklet, ticari araçlar için çeşitli modeller</li>
                         <li><strong>Yaygın Servis Ağı:</strong> Türkiye'nin her yerinde servis ve garantisi mevcuttur</li>
                     </ul>
-                    <p>En yakın oto elektrikçi ekibimiz, Mutlu akü değişimi konusunda deneyimli teknisyenlerimizle hizmetinizde. Aracınızın modeline uygun Mutlu aküyü hemen temin ediyoruz.</p>
+                    <p>En yakın akücü ekibimiz, Mutlu akü değişimi konusunda deneyimli teknisyenlerimizle hizmetinizde. Aracınızın modeline uygun Mutlu aküyü hemen temin ediyoruz.</p>
                 </div>
                 <div class="article-image">
                     <img src="https://www.acilotoelektrikci.com/images/mutlu2.webp" alt="Mutlu Akü - Türkiye'nin Yerli Akü Markası" class="article-img">
@@ -1343,7 +1311,7 @@
                         <li><strong>Geniş Kullanım Alanı:</strong> Otomobil, motosiklet, kamyon, iş makineleri için uygun</li>
                         <li><strong>Kolay Temin:</strong> Türkiye'nin her yerinde kolayca bulunabilir</li>
                     </ul>
-                    <p>En yakın oto elektrikçi servisimizle, İnci akü değişimi için hemen yanınızdayız. Aracınızın teknik özelliklerine uygun İnci aküyü belirleyip, profesyonel montaj hizmeti sunuyoruz.</p>
+                    <p>En yakın akücü servisimizle, İnci akü değişimi için hemen yanınızdayız. Aracınızın teknik özelliklerine uygun İnci aküyü belirleyip, profesyonel montaj hizmeti sunuyoruz.</p>
                 </div>
                 <div class="article-image">
                     <img src="https://www.acilotoelektrikci.com/images/inci2.webp" alt="İnci Akü - Ekonomik ve Kaliteli Akü Çözümü" class="article-img">
@@ -1365,7 +1333,13 @@
                         <li><strong>Korozyon:</strong> Akü terminallerinde aşırı korozyon oluşmuşsa</li>
                         <li><strong>Yaş Faktörü:</strong> Akünüz 3-5 yaşını doldurmuşsa</li>
                     </ul>
-                    <p>En yakın oto elektrikçi olarak, akü testi ve değişimi konusunda profesyonel hizmet sunuyoruz. Akünüzün durumunu ücretsiz test edip, değişim gerekiyorsa en uygun aküyü öneriyoruz.</p>
+                    <p>En yakın akücü olarak, akü testi ve değişimi konusunda profesyonel hizmet sunuyoruz. Akünüzün durumunu ücretsiz test edip, değişim gerekiyorsa en uygun aküyü öneriyoruz.</p>
+                </div>
+                <div class="article-image">
+                    <div style="background: #f0f9ff; padding: 20px; border-radius: 10px; text-align: center;">
+                        <i class="fas fa-car-battery" style="font-size: 80px; color: #3b82f6; margin-bottom: 15px;"></i>
+                        <p style="color: #1e3a8a; font-weight: 600;">Akünüzü Ücretsiz Test Ettirin!</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1376,14 +1350,14 @@
         <div class="contact-container">
             <div class="contact-info">
                 <h3>İletişim Bilgilerimiz</h3>
-                <p>En yakın oto elektrikçi olarak 7 gün 24 saat hizmetinizdeyiz. Acil durumlarda hemen arayın!</p>
+                <p>En yakın akücü olarak 7 gün 24 saat hizmetinizdeyiz. Acil durumlarda hemen arayın!</p>
                 
                 <div class="contact-details">
                     <p><i class="fas fa-phone-alt"></i> <strong>Telefon:</strong> <a href="tel:05054212707" style="color: white; text-decoration: none;">0505 421 27 07</a></p>
                     <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/905054212707" target="_blank" style="color: white; text-decoration: none;">0505 421 27 07</a></p>
                     <p><i class="fas fa-envelope"></i> <strong>E-posta:</strong> info@acilotoelektrikci.com</p>
                     <p><i class="fas fa-clock"></i> <strong>Çalışma Saatleri:</strong> 7/24 Acil Servis</p>
-                    <p><i class="fas fa-map-marker-alt"></i> <strong>Hizmet Bölgesi:</strong> Size En Yakın Bölgedeyiz</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Hizmet Bölgesi:</strong> En Yakın Akücü</p>
                 </div>
             </div>
             
@@ -1414,9 +1388,9 @@
             <div class="footer-grid">
                 <div class="footer-about">
                     <div class="footer-logo">
-                        <i class="fas fa-car-battery"></i> Acil <span>Oto Elektrikçi</span>
+                        <i class="fas fa-car-battery"></i> En Yakın <span>Akücü</span>
                     </div>
-                    <p>En yakın oto elektrikçi olarak 7/24 acil yol yardım hizmeti sunuyoruz. Varta, Mutlu, İnci akü değişimi, marş tamiri ve tüm oto elektrik arızalarında yanınızdayız.</p>
+                    <p>En yakın akücü olarak 7/24 acil yol yardım hizmeti sunuyoruz. Varta, Mutlu, İnci akü değişimi, marş tamiri ve tüm oto elektrik arızalarında yanınızdayız.</p>
                 </div>
                 
                 <div class="footer-links">
@@ -1444,12 +1418,12 @@
                     <h4>İletişim</h4>
                     <p><i class="fas fa-phone-alt"></i> <a href="tel:05054212707" style="color: #60a5fa; text-decoration: none; font-weight: 600;">0505 421 27 07</a></p>
                     <p><i class="fas fa-clock"></i> 7/24 Acil Servis</p>
-                    <p><i class="fas fa-map-marker-alt"></i> İstanbul ve Çevre İller</p>
+                    <p><i class="fas fa-map-marker-alt"></i> En Yakın Akücü</p>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>&copy; 2023 Acil Oto Elektrikçi. Tüm hakları saklıdır. | En yakın oto elektrikçi arayışlarınızda profesyonel çözüm ortağınız.</p>
+                <p>&copy; 2023 En Yakın Akücü. Tüm hakları saklıdır. | En yakın akücü arayışlarınızda profesyonel çözüm ortağınız.</p>
                 <p style="margin-top: 10px;">Acil durumlarda hemen arayın: <a href="tel:05054212707" style="color: #60a5fa; text-decoration: none; font-weight: 700;">0505 421 27 07</a></p>
             </div>
         </div>
@@ -1468,7 +1442,7 @@
     <!-- Sohbet Balonu -->
     <div class="chat-bubble" id="chatBubble">
         <button class="close-chat" id="closeChat">&times;</button>
-        <p><strong>En yakın oto elektrikçi olarak hizmetinizdeyiz!</strong></p>
+        <p><strong>En yakın akücü olarak hizmetinizdeyiz!</strong></p>
         <p>Yolda mı kaldınız? Aracınız çalışmıyor mu? Hemen arayın, en kısa sürede yanınızdayız.</p>
         <a href="tel:05054212707" class="cta-button">
             <i class="fas fa-phone-alt"></i> Hemen Ara: 0505 421 27 07
@@ -1498,7 +1472,7 @@
             const problemDesc = document.getElementById('problemDesc').value;
             
             // WhatsApp mesajı oluştur
-            const message = `Merhaba, en yakın oto elektrikçi arıyorum. Teknik destek talep ediyorum:%0A%0A` +
+            const message = `Merhaba, en yakın akücü arıyorum. Teknik destek talep ediyorum:%0A%0A` +
                            `Ad Soyad: ${userName}%0A` +
                            `Telefon: ${userPhone}%0A` +
                            `Konum: ${userLocation}%0A` +
