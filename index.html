@@ -176,19 +176,20 @@
             width: 100%;
         }
         
-        /* Hero Bölümü - GÜNCELLENDİ */
+        /* Hero Bölümü - GÜNCELLENDİ (Daha net görsel) */
         .hero {
-            background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(59, 130, 246, 0.9)), url('https://www.acilotoelektrikci.com/images/aku.webp');
+            background: url('https://www.acilotoelektrikci.com/images/aku.webp');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-attachment: fixed;
             color: white;
             padding: 160px 20px 100px;
             text-align: center;
             margin-top: 70px;
             position: relative;
             overflow: hidden;
-            min-height: 80vh;
+            min-height: 90vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -201,8 +202,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="%23ffffff" opacity="0.05"/></svg>');
-            background-size: cover;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(2px);
         }
         
         .hero-content {
@@ -210,10 +211,11 @@
             margin: 0 auto;
             position: relative;
             z-index: 2;
-            background: rgba(15, 23, 42, 0.7);
-            padding: 40px;
+            background: rgba(15, 23, 42, 0.8);
+            padding: 50px;
             border-radius: 20px;
-            backdrop-filter: blur(5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
         
         .hero h1 {
@@ -221,7 +223,6 @@
             margin-bottom: 25px;
             font-weight: 800;
             line-height: 1.2;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         
         .hero h1 span {
@@ -237,7 +238,6 @@
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
         
         .hero-buttons {
@@ -301,7 +301,85 @@
             justify-content: center;
         }
         
-        /* Akü Markaları Bölümü */
+        /* SEO Makaleler Bölümü - BAŞA TAŞINDI */
+        .seo-articles {
+            padding: 100px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .article-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            margin-bottom: 40px;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .article-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        
+        .article-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: flex-start;
+        }
+        
+        .article-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .article-image {
+            flex: 0 0 400px;
+            text-align: center;
+        }
+        
+        /* Makale resimleri */
+        .article-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+        
+        .article-image:hover .article-img {
+            transform: scale(1.03);
+        }
+        
+        .article-img-caption {
+            color: #6b7280;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        
+        .article-card p {
+            color: #4b5563;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        
+        .article-card ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .article-card li {
+            color: #4b5563;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        /* Akü Markaları Bölümü - RESİMSİZ */
         .brands-section {
             padding: 100px 20px;
             background-color: #f0f9ff;
@@ -367,20 +445,23 @@
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
         }
         
-        /* Resim Boyutları Büyütüldü */
-        .brand-logo {
-            width: 200px;
-            height: 200px;
-            object-fit: contain;
+        .brand-icon {
+            font-size: 70px;
+            color: #3b82f6;
             margin-bottom: 25px;
-            border-radius: 10px;
-            padding: 15px;
             background: #eff6ff;
-            transition: transform 0.3s ease;
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all 0.3s ease;
         }
         
-        .brand-card:hover .brand-logo {
-            transform: scale(1.05);
+        .brand-card:hover .brand-icon {
+            transform: scale(1.1);
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
         }
         
         .brand-card h3 {
@@ -574,84 +655,6 @@
         .phone-big i {
             margin-right: 15px;
             color: #3b82f6;
-        }
-        
-        /* SEO Makaleler Bölümü */
-        .seo-articles {
-            padding: 100px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .article-card {
-            background: white;
-            border-radius: 15px;
-            padding: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            margin-bottom: 40px;
-            border: 1px solid #e5e7eb;
-        }
-        
-        .article-card h3 {
-            color: #1e3a8a;
-            margin-bottom: 20px;
-            font-size: 1.8rem;
-            font-weight: 700;
-        }
-        
-        .article-content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            align-items: flex-start;
-        }
-        
-        .article-text {
-            flex: 1;
-            min-width: 300px;
-        }
-        
-        .article-image {
-            flex: 0 0 400px;
-            text-align: center;
-        }
-        
-        /* Makale resimleri büyütüldü */
-        .article-img {
-            width: 100%;
-            max-width: 400px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 15px;
-            transition: transform 0.3s ease;
-        }
-        
-        .article-image:hover .article-img {
-            transform: scale(1.03);
-        }
-        
-        .article-img-caption {
-            color: #6b7280;
-            font-size: 0.9rem;
-            font-style: italic;
-        }
-        
-        .article-card p {
-            color: #4b5563;
-            margin-bottom: 20px;
-            line-height: 1.8;
-            font-size: 1.05rem;
-        }
-        
-        .article-card ul {
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .article-card li {
-            color: #4b5563;
-            margin-bottom: 10px;
-            line-height: 1.6;
         }
         
         /* İletişim */
@@ -949,7 +952,8 @@
         @media (max-width: 768px) {
             .hero {
                 padding: 140px 20px 80px;
-                min-height: 70vh;
+                min-height: 80vh;
+                background-attachment: scroll;
             }
             
             .hero-content {
@@ -1002,9 +1006,11 @@
                 padding: 30px;
             }
             
-            .brand-logo {
-                width: 180px;
-                height: 180px;
+            .brand-icon {
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                font-size: 60px;
             }
             
             .hero .cta-button {
@@ -1020,7 +1026,7 @@
             }
             
             .hero {
-                min-height: 60vh;
+                min-height: 70vh;
             }
             
             .hero h1 {
@@ -1056,9 +1062,11 @@
                 grid-template-columns: 1fr;
             }
             
-            .brand-logo {
-                width: 160px;
-                height: 160px;
+            .brand-icon {
+                width: 90px;
+                height: 90px;
+                line-height: 90px;
+                font-size: 50px;
             }
         }
     </style>
@@ -1078,10 +1086,10 @@
             
             <nav class="main-menu">
                 <a href="#home">Ana Sayfa</a>
+                <a href="#articles">Bilgi Bankası</a>
                 <a href="#brands">Akü Markaları</a>
                 <a href="#services">Hizmetlerimiz</a>
                 <a href="#why-us">Neden Biz?</a>
-                <a href="#articles">Bilgi Bankası</a>
                 <a href="#contact">İletişim</a>
                 <a href="tel:05054212707" class="header-phone">
                     <i class="fas fa-phone-alt"></i> 0505 421 27 07
@@ -1094,10 +1102,10 @@
             
             <div class="mobile-menu" id="mobileMenu">
                 <a href="#home">Ana Sayfa</a>
+                <a href="#articles">Bilgi Bankası</a>
                 <a href="#brands">Akü Markaları</a>
                 <a href="#services">Hizmetlerimiz</a>
                 <a href="#why-us">Neden Biz?</a>
-                <a href="#articles">Bilgi Bankası</a>
                 <a href="#contact">İletişim</a>
                 <a href="tel:05054212707" style="color: #3b82f6; font-weight: 700;">
                     <i class="fas fa-phone-alt"></i> 0505 421 27 07
@@ -1106,7 +1114,7 @@
         </div>
     </header>
 
-    <!-- Hero Bölümü - GÜNCELLENDİ -->
+    <!-- Hero Bölümü -->
     <section class="hero" id="home">
         <div class="hero-content">
             <h1><span>En Yakın Akücü</span>Acil Oto Elektrik Tamir Servisi</h1>
@@ -1122,13 +1130,104 @@
         </div>
     </section>
 
-    <!-- Akü Markaları Bölümü -->
+    <!-- SEO Makaleler Bölümü - BAŞA TAŞINDI -->
+    <section class="seo-articles" id="articles">
+        <h2 class="section-title">Akü ve Oto Elektrik Hakkında Bilmeniz Gerekenler</h2>
+        
+        <div class="article-card">
+            <h3>Varta Akü: Neden Dünya Lideri?</h3>
+            <div class="article-content">
+                <div class="article-text">
+                    <p>Varta akü, dünya çapında en çok tercih edilen akü markalarından biridir. Almanya menşeili bu marka, yüksek teknoloji ve kalite standartlarıyla öne çıkar. Varta akülerin avantajları:</p>
+                    <ul>
+                        <li><strong>Uzun Ömür:</strong> Varta aküler diğer markalara göre %30 daha uzun ömürlüdür</li>
+                        <li><strong>Yüksek Performans:</strong> Soğuk havalarda bile güçlü marş performansı sunar</li>
+                        <li><strong>Güvenilirlik:</strong> Düşük self-deşarj oranıyla uzun süre şarjını korur</li>
+                        <li><strong>Çevre Dostu:</strong> %99 geri dönüştürülebilir malzemeden üretilir</li>
+                    </ul>
+                    <p>En yakın akücü olarak, orijinal Varta akü temini ve montajı konusunda uzman hizmet sunuyoruz. Aracınız için en uygun Varta aküyü seçmenize yardımcı oluyoruz.</p>
+                </div>
+                <div class="article-image">
+                    <img src="https://www.acilotoelektrikci.com/images/varta2.webp" alt="Varta Akü - Yüksek Performanslı Alman Kalitesi" class="article-img">
+                    <p class="article-img-caption">Varta Akü - Dünya Lideri Akü Markası</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="article-card">
+            <h3>Mutlu Akü: Türkiye'nin Gururu</h3>
+            <div class="article-content">
+                <div class="article-text">
+                    <p>Mutlu akü, Türkiye'nin ilk ve en büyük akü üreticisidir. 50 yılı aşkın tecrübesiyle yerli üretimin gurur kaynağıdır. Mutlu akülerin öne çıkan özellikleri:</p>
+                    <ul>
+                        <li><strong>Yerli Üretim:</strong> Tamamen Türkiye'de üretilir, milli ekonomiye katkı sağlar</li>
+                        <li><strong>Uygun Fiyat:</strong> İthal markalara göre daha ekonomiktir</li>
+                        <li><strong>Geniş Ürün Yelpazesi:</strong> Otomobil, motosiklet, ticari araçlar için çeşitli modeller</li>
+                        <li><strong>Yaygın Servis Ağı:</strong> Türkiye'nin her yerinde servis ve garantisi mevcuttur</li>
+                    </ul>
+                    <p>En yakın akücü ekibimiz, Mutlu akü değişimi konusunda deneyimli teknisyenlerimizle hizmetinizde. Aracınızın modeline uygun Mutlu aküyü hemen temin ediyoruz.</p>
+                </div>
+                <div class="article-image">
+                    <img src="https://www.acilotoelektrikci.com/images/mutlu2.webp" alt="Mutlu Akü - Türkiye'nin Yerli Akü Markası" class="article-img">
+                    <p class="article-img-caption">Mutlu Akü - Yerli Üretim Kalitesi</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="article-card">
+            <h3>İnci Akü: Kalite ve Ekonomi Bir Arada</h3>
+            <div class="article-content">
+                <div class="article-text">
+                    <p>İnci akü, kaliteli ve ekonomik akü arayanlar için ideal bir seçenektir. Türk malı olan İnci aküler, uzun ömür ve güvenilir performans sunar. İnci akünün avantajları:</p>
+                    <ul>
+                        <li><strong>Ekonomik Fiyat:</strong> Bütçe dostu fiyat politikası</li>
+                        <li><strong>Dayanıklılık:</strong> Zorlu hava koşullarına dayanıklı yapı</li>
+                        <li><strong>Geniş Kullanım Alanı:</strong> Otomobil, motosiklet, kamyon, iş makineleri için uygun</li>
+                        <li><strong>Kolay Temin:</strong> Türkiye'nin her yerinde kolayca bulunabilir</li>
+                    </ul>
+                    <p>En yakın akücü servisimizle, İnci akü değişimi için hemen yanınızdayız. Aracınızın teknik özelliklerine uygun İnci aküyü belirleyip, profesyonel montaj hizmeti sunuyoruz.</p>
+                </div>
+                <div class="article-image">
+                    <img src="https://www.acilotoelektrikci.com/images/inci2.webp" alt="İnci Akü - Ekonomik ve Kaliteli Akü Çözümü" class="article-img">
+                    <p class="article-img-caption">İnci Akü - Ekonomik ve Güvenilir</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="article-card">
+            <h3>Akü Değişimi Ne Zaman Yapılmalı? İşaretler Nelerdir?</h3>
+            <div class="article-content">
+                <div class="article-text">
+                    <p>Akü değişimi için doğru zamanı bilmek, yolda kalma riskinizi azaltır. Akünüzün değişme zamanı geldiğini gösteren işaretler:</p>
+                    <ul>
+                        <li><strong>Zayıf Marş:</strong> Aracınızı çalıştırmakta zorlanıyorsanız</li>
+                        <li><strong>Işık Problemleri:</strong> Far ışıkları normalden daha sönük yanıyorsa</li>
+                        <li><strong>Elektrikli Donanım Sorunları:</strong> Cam, kilit, klima gibi sistemler düzgün çalışmıyorsa</li>
+                        <li><strong>Fiziksel Deformasyon:</strong> Akü kutusu şişmiş veya deforme olmuşsa</li>
+                        <li><strong>Korozyon:</strong> Akü terminallerinde aşırı korozyon oluşmuşsa</li>
+                        <li><strong>Yaş Faktörü:</strong> Akünüz 3-5 yaşını doldurmuşsa</li>
+                    </ul>
+                    <p>En yakın akücü olarak, akü testi ve değişimi konusunda profesyonel hizmet sunuyoruz. Akünüzün durumunu ücretsiz test edip, değişim gerekiyorsa en uygun aküyü öneriyoruz.</p>
+                </div>
+                <div class="article-image">
+                    <div style="background: #f0f9ff; padding: 20px; border-radius: 10px; text-align: center;">
+                        <i class="fas fa-car-battery" style="font-size: 80px; color: #3b82f6; margin-bottom: 15px;"></i>
+                        <p style="color: #1e3a8a; font-weight: 600;">Akünüzü Ücretsiz Test Ettirin!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Akü Markaları Bölümü - RESİMSİZ -->
     <section class="brands-section" id="brands">
         <div class="brands-container">
             <h2 class="section-title">Resmi Satıcısı Olduğumuz Akü Markaları</h2>
             <div class="brands-grid">
                 <div class="brand-card">
-                    <img src="https://www.acilotoelektrikci.com/images/varta.webp" alt="Varta Akü - En Kaliteli Akü Markası" class="brand-logo">
+                    <div class="brand-icon">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
                     <h3>Varta Akü</h3>
                     <p>Dünyanın lider akü markası Varta'nın resmi satıcısıyız. Varta aküleri yüksek performans, uzun ömür ve güvenilirlik sunar. Tüm araç modelleri için uygun Varta akü çeşitleri stoklarımızda mevcuttur.</p>
                     <a href="tel:05054212707" class="cta-button">
@@ -1137,7 +1236,9 @@
                 </div>
                 
                 <div class="brand-card">
-                    <img src="https://www.acilotoelektrikci.com/images/mutlu.webp" alt="Mutlu Akü - Türkiye'nin Yerli Akü Markası" class="brand-logo">
+                    <div class="brand-icon">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
                     <h3>Mutlu Akü</h3>
                     <p>Türkiye'nin lider akü markası Mutlu, yerli üretim kalitesiyle öne çıkar. Mutlu aküler dayanıklılık ve uygun fiyat avantajını bir arada sunar. Tüm otomobil ve ticari araçlarınız için Mutlu akü temin ediyoruz.</p>
                     <a href="tel:05054212707" class="cta-button">
@@ -1146,7 +1247,9 @@
                 </div>
                 
                 <div class="brand-card">
-                    <img src="https://www.acilotoelektrikci.com/images/inci.webp" alt="İnci Akü - Güvenilir ve Ekonomik Akü" class="brand-logo">
+                    <div class="brand-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
                     <h3>İnci Akü</h3>
                     <p>İnci akü, kaliteli ve ekonomik çözüm arayanlar için ideal seçenektir. Uzun ömürlü performansı ve uygun fiyat politikasıyla İnci aküler tüm araç sahiplerinin tercihidir. Motosiklet, otomobil ve ticari araçlar için.</p>
                     <a href="tel:05054212707" class="cta-button">
@@ -1256,95 +1359,6 @@
         </a>
     </section>
 
-    <!-- SEO Makaleler Bölümü -->
-    <section class="seo-articles" id="articles">
-        <h2 class="section-title">Akü ve Oto Elektrik Hakkında Bilmeniz Gerekenler</h2>
-        
-        <div class="article-card">
-            <h3>Varta Akü: Neden Dünya Lideri?</h3>
-            <div class="article-content">
-                <div class="article-text">
-                    <p>Varta akü, dünya çapında en çok tercih edilen akü markalarından biridir. Almanya menşeili bu marka, yüksek teknoloji ve kalite standartlarıyla öne çıkar. Varta akülerin avantajları:</p>
-                    <ul>
-                        <li><strong>Uzun Ömür:</strong> Varta aküler diğer markalara göre %30 daha uzun ömürlüdür</li>
-                        <li><strong>Yüksek Performans:</strong> Soğuk havalarda bile güçlü marş performansı sunar</li>
-                        <li><strong>Güvenilirlik:</strong> Düşük self-deşarj oranıyla uzun süre şarjını korur</li>
-                        <li><strong>Çevre Dostu:</strong> %99 geri dönüştürülebilir malzemeden üretilir</li>
-                    </ul>
-                    <p>En yakın akücü olarak, orijinal Varta akü temini ve montajı konusunda uzman hizmet sunuyoruz. Aracınız için en uygun Varta aküyü seçmenize yardımcı oluyoruz.</p>
-                </div>
-                <div class="article-image">
-                    <img src="https://www.acilotoelektrikci.com/images/varta2.webp" alt="Varta Akü - Yüksek Performanslı Alman Kalitesi" class="article-img">
-                    <p class="article-img-caption">Varta Akü - Dünya Lideri Akü Markası</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="article-card">
-            <h3>Mutlu Akü: Türkiye'nin Gururu</h3>
-            <div class="article-content">
-                <div class="article-text">
-                    <p>Mutlu akü, Türkiye'nin ilk ve en büyük akü üreticisidir. 50 yılı aşkın tecrübesiyle yerli üretimin gurur kaynağıdır. Mutlu akülerin öne çıkan özellikleri:</p>
-                    <ul>
-                        <li><strong>Yerli Üretim:</strong> Tamamen Türkiye'de üretilir, milli ekonomiye katkı sağlar</li>
-                        <li><strong>Uygun Fiyat:</strong> İthal markalara göre daha ekonomiktir</li>
-                        <li><strong>Geniş Ürün Yelpazesi:</strong> Otomobil, motosiklet, ticari araçlar için çeşitli modeller</li>
-                        <li><strong>Yaygın Servis Ağı:</strong> Türkiye'nin her yerinde servis ve garantisi mevcuttur</li>
-                    </ul>
-                    <p>En yakın akücü ekibimiz, Mutlu akü değişimi konusunda deneyimli teknisyenlerimizle hizmetinizde. Aracınızın modeline uygun Mutlu aküyü hemen temin ediyoruz.</p>
-                </div>
-                <div class="article-image">
-                    <img src="https://www.acilotoelektrikci.com/images/mutlu2.webp" alt="Mutlu Akü - Türkiye'nin Yerli Akü Markası" class="article-img">
-                    <p class="article-img-caption">Mutlu Akü - Yerli Üretim Kalitesi</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="article-card">
-            <h3>İnci Akü: Kalite ve Ekonomi Bir Arada</h3>
-            <div class="article-content">
-                <div class="article-text">
-                    <p>İnci akü, kaliteli ve ekonomik akü arayanlar için ideal bir seçenektir. Türk malı olan İnci aküler, uzun ömür ve güvenilir performans sunar. İnci akünün avantajları:</p>
-                    <ul>
-                        <li><strong>Ekonomik Fiyat:</strong> Bütçe dostu fiyat politikası</li>
-                        <li><strong>Dayanıklılık:</strong> Zorlu hava koşullarına dayanıklı yapı</li>
-                        <li><strong>Geniş Kullanım Alanı:</strong> Otomobil, motosiklet, kamyon, iş makineleri için uygun</li>
-                        <li><strong>Kolay Temin:</strong> Türkiye'nin her yerinde kolayca bulunabilir</li>
-                    </ul>
-                    <p>En yakın akücü servisimizle, İnci akü değişimi için hemen yanınızdayız. Aracınızın teknik özelliklerine uygun İnci aküyü belirleyip, profesyonel montaj hizmeti sunuyoruz.</p>
-                </div>
-                <div class="article-image">
-                    <img src="https://www.acilotoelektrikci.com/images/inci2.webp" alt="İnci Akü - Ekonomik ve Kaliteli Akü Çözümü" class="article-img">
-                    <p class="article-img-caption">İnci Akü - Ekonomik ve Güvenilir</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="article-card">
-            <h3>Akü Değişimi Ne Zaman Yapılmalı? İşaretler Nelerdir?</h3>
-            <div class="article-content">
-                <div class="article-text">
-                    <p>Akü değişimi için doğru zamanı bilmek, yolda kalma riskinizi azaltır. Akünüzün değişme zamanı geldiğini gösteren işaretler:</p>
-                    <ul>
-                        <li><strong>Zayıf Marş:</strong> Aracınızı çalıştırmakta zorlanıyorsanız</li>
-                        <li><strong>Işık Problemleri:</strong> Far ışıkları normalden daha sönük yanıyorsa</li>
-                        <li><strong>Elektrikli Donanım Sorunları:</strong> Cam, kilit, klima gibi sistemler düzgün çalışmıyorsa</li>
-                        <li><strong>Fiziksel Deformasyon:</strong> Akü kutusu şişmiş veya deforme olmuşsa</li>
-                        <li><strong>Korozyon:</strong> Akü terminallerinde aşırı korozyon oluşmuşsa</li>
-                        <li><strong>Yaş Faktörü:</strong> Akünüz 3-5 yaşını doldurmuşsa</li>
-                    </ul>
-                    <p>En yakın akücü olarak, akü testi ve değişimi konusunda profesyonel hizmet sunuyoruz. Akünüzün durumunu ücretsiz test edip, değişim gerekiyorsa en uygun aküyü öneriyoruz.</p>
-                </div>
-                <div class="article-image">
-                    <div style="background: #f0f9ff; padding: 20px; border-radius: 10px; text-align: center;">
-                        <i class="fas fa-car-battery" style="font-size: 80px; color: #3b82f6; margin-bottom: 15px;"></i>
-                        <p style="color: #1e3a8a; font-weight: 600;">Akünüzü Ücretsiz Test Ettirin!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- İletişim -->
     <section class="contact" id="contact">
         <div class="contact-container">
@@ -1397,10 +1411,10 @@
                     <h4>Hızlı Menü</h4>
                     <ul>
                         <li><a href="#home">Ana Sayfa</a></li>
+                        <li><a href="#articles">Bilgi Bankası</a></li>
                         <li><a href="#brands">Akü Markaları</a></li>
                         <li><a href="#services">Hizmetlerimiz</a></li>
                         <li><a href="#why-us">Neden Biz?</a></li>
-                        <li><a href="#articles">Bilgi Bankası</a></li>
                         <li><a href="#contact">İletişim</a></li>
                     </ul>
                 </div>
