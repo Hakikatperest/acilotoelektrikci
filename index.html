@@ -39,6 +39,7 @@
             --gradient-primary: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
             --gradient-secondary: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
             --gradient-blue: linear-gradient(135deg, #3498db 0%, #2c80b9 100%);
+            --gradient-blue-dark: linear-gradient(135deg, #2980b9 0%, #1c5d8f 100%);
             --gradient-light: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         }
         
@@ -812,9 +813,9 @@
             border-top: 1px solid rgba(0, 0, 0, 0.05);
         }
         
-        /* Contact Section */
+        /* Contact Section - MAVİ ARKA PLAN */
         .contact {
-            background: var(--gradient-primary);
+            background: var(--gradient-blue-dark);
             color: white;
         }
         
@@ -827,7 +828,7 @@
         }
         
         .contact .section-title p {
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.9);
         }
         
         .contact-info {
@@ -842,17 +843,18 @@
             text-align: center;
             flex: 1;
             min-width: 250px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.15);
             padding: 40px 20px;
             border-radius: 12px;
             backdrop-filter: blur(10px);
             transition: var(--transition);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
         .contact-item:hover {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.25);
             transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
         }
         
         .contact-item i {
@@ -867,7 +869,9 @@
         }
         
         .contact-item p {
-            color: rgba(255, 255, 255, 0.9);
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 1.2rem;
+            font-weight: 500;
         }
         
         /* Akü Servisi Makale Bölümleri */
@@ -1198,6 +1202,16 @@
             .article-text {
                 padding: 30px;
             }
+            
+            /* Contact responsive */
+            .contact-info {
+                gap: 30px;
+            }
+            
+            .contact-item {
+                min-width: 200px;
+                padding: 30px 15px;
+            }
         }
         
         @media (max-width: 576px) {
@@ -1263,6 +1277,17 @@
             
             .article-text h3 {
                 font-size: 1.5rem;
+            }
+            
+            /* Contact responsive */
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-item {
+                width: 100%;
+                max-width: 300px;
             }
         }
     </style>
@@ -1822,7 +1847,7 @@
         </div>
     </section>
     
-    <!-- Contact Section -->
+    <!-- Contact Section - MAVİ ARKA PLANLI -->
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-title">
